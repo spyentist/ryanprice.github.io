@@ -8,26 +8,33 @@
   <link rel="stylesheet" href="\style.css">
   <title>Home Page</title>
 </head>
-<body>
+<body onload="doInputOutput();">
   <header>
     <h1>Ryan Price</h1>
     <!-- <h2>BYU-I</h2> -->
-    <img src="Week 2\images\profile picture.jpg" class="profilepic" alt="Ryan's Profile Picture">
+    
   </header>
+  
   <main>
+    <div class="pic_content">
+      <img src="Week 2\images\profile picture.jpg" class="profilepic" alt="Ryan's Profile Picture">
+    </div>
     <h2>CIT 230 - Assignment Portal</h2>
+    <hr>
     <ul>
       <li>Lesson 2 - <a href="Week 2\design-priciples.html">Design Principles</a></li>
     </ul>
   </main>
+  <br />
+  <br />
   <footer>
 
     <p>
       &copy; 2020 | Ryan Price | Idaho | <a href="https://www.byui.edu/online">BYUI Online Learning</a>
     </p>
-    <p></p>
-  </footer>
+    <p id="updateDate"></p>
+    </footer>
   <!-- import the webpage's javascript file -->
-  <script src="/script.js"></script>
+  <script src="Week 2\scripts\script.js"></script>
 </body>
 </html>
