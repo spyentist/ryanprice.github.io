@@ -1,0 +1,15 @@
+header {
+    background-color: darkblue;
+    color:white;
+    display:grid;
+    grid-template-columns: .5fr 1fr .5fr;
+}
+
+header h1 {
+    grid-column: 2 / span 2;
+}
+
+header h3 {
+    grid-column: 2 / 3;
+    align-content: center;
+}
