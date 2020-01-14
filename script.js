@@ -43,5 +43,6 @@ function doInputOutput() {
     var display = "Last Updated: " + mm + "/" + dd + "/" + yyyy + "   " + hh + ":" + mn + ":" + ss;
 
     document.getElementById("updateDate").innerHTML = display;
+    document.getElementById("curYear").innerHTML = yyyy;
     // alert("This works!")
 }
