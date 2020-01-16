@@ -30,7 +30,6 @@ body {
     "contrast"
     "footer";
     grid-gap: 10px;
-    box-sizing;
 }
 
 a {
@@ -52,28 +51,23 @@ div img {
 }
 
 header {
-	padding: 7px;
 	grid-area: "header";
 	justify-content:center;
 	align-items:center;
 }
 
 .rule_of_thirds {
-    padding: 7px;
     grid-area: "rule_of_thirds";
 }
 
 .repetition {
-    padding: 7px;
     grid-area: "repetition";
 }
 
 .contrast {
-    padding: 7px;
     grid-area: "contrast";
 }
 
 footer {
-    padding: 7px;
     grid-area: "footer";
 }
