@@ -1,15 +1,79 @@
+:root {
+    --background-color: #0B0C10;
+    --text-color: #66FCF1;
+    --accent1-color: #1F2833;
+    --accent2-color: #C5C6C7;
+
+}
+
+html {
+    background-color: var(--background-color);
+}
+
+header, footer {
+    background-color: var(--accent1-color);
+    color: var(--text-color);
+    text-align: center;
+}
+
+
+
+body {
+    font-family: "Orbitron";
+    color: var(--text-color);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "header"
+    "rule_of_thirds"
+    "repitition"
+    "contrast"
+    "footer";
+    grid-gap: 10px;
+    box-sizing;
+}
+
+a {
+    text-decoration-color: var(--accent2-color);
+    color: var(--accent2-color);
+}
+
+div {
+    max-width: 250px;
+    background-color: var(--accent1-color);
+}
+
+div p, div h2, div h4, div img {
+    margin-left: 5px;
+}
+
+div img {
+    max-width: 95%;
+}
+
 header {
-    background-color: darkblue;
-    color:white;
-    display:grid;
-    grid-template-columns: .5fr 1fr .5fr;
+	padding: 7px;
+	grid-area: "header";
+	justify-content:center;
+	align-items:center;
 }
 
-header h1 {
-    grid-column: 2 / span 2;
+.rule_of_thirds {
+    padding: 7px;
+    grid-area: "rule_of_thirds";
 }
 
-header h3 {
-    grid-column: 2 / 3;
-    align-content: center;
+.repetition {
+    padding: 7px;
+    grid-area: "repetition";
+}
+
+.contrast {
+    padding: 7px;
+    grid-area: "contrast";
+}
+
+footer {
+    padding: 7px;
+    grid-area: "footer";
 }
