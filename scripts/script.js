@@ -4,6 +4,7 @@ function alertMe() {
 
 
 function doInputOutput() {
+    var modified = document.lastModified;
     var today = new Date();
     var dd = today.getDate();
     var mm = today.getMonth()+1;
@@ -42,7 +43,7 @@ function doInputOutput() {
     
     var display = "Last Updated: " + mm + "/" + dd + "/" + yyyy + "   " + hh + ":" + mn + ":" + ss;
 
-    document.getElementById("updateDate").innerHTML = display;
+    document.getElementById("updateDate").innerHTML = document.lastModified;
     document.getElementById("curYear").innerHTML = yyyy;
     // alert("This works!")
 }
