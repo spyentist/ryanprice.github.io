@@ -35,7 +35,7 @@ div {
 }
 
 div p, div h2, div h4, div img {
-    margin-left: 5px;
+    margin-left: .5em;
 }
 
 div img {
@@ -43,23 +43,10 @@ div img {
 }
 
 header {
-	grid-area: "header";
 	justify-content:center;
 	align-items:center;
 }
 
-.rule_of_thirds {
-    grid-area: "rule_of_thirds";
-}
-
-.repetition {
-    grid-area: "repetition";
-}
-
-.contrast {
-    grid-area: "contrast";
-}
-
-footer {
-    grid-area: "footer";
+.rule_of_thirds, .contrast, .repetition {
+    padding-bottom: 1em;
 }
