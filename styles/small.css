@@ -2,8 +2,8 @@
     --background-color: #0B0C10;
     --text-color: #66FCF1;
     --accent1-color: #1F2833;
-    --accent2-color: #C5C6C7;
-    --link-color: #45129E;
+    --link-color: #C5C6C7;
+    --accent2-color: #45129E;
 
 }
 
@@ -49,8 +49,8 @@ hr {
 }
 
 a {
-    text-decoration-color: var(--accent2-color);
-    color: var(--accent2-color);
+    text-decoration-color: var(--link-color);
+    color: var(--link-color);
 }
 
 footer {

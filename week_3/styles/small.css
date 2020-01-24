@@ -1,7 +1,43 @@
+:root {
+    --background-color: #BEDCE2;
+    --text-color: #4D7298;
+    --accent1-color: #E2B48E;
+    --link-color: #2D3142;
+
+
+}
+
+.first_font {
+font-family: 'Bangers', cursive;
+}
+
+.second_font {
+font-family: 'Lato', sans-serif;
+}
+
+.third_font {
+font-family: 'Bebas Neue', cursive;
+}
+
+.fourth_font {
+font-family: 'Oswald', sans-serif;
+}
+
+.fifth_font {
+font-family: 'ZCOOL QingKe HuangYou', cursive;
+}
+
+.sixth_font {
+font-family: 'Roboto Mono', monospace;
+}
+
+.seventh_font {
+font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
 .icon {
-    margin-top: 1em;
-    margin-left: 1em;
-    max-width: 3em;
+    max-width:10%;
+    height: 5em;
 }
 
 p {
@@ -10,4 +46,79 @@ p {
 
 body {
     margin-left:1em;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    margin:1em;
+}
+
+ul li a {
+    text-decoration: none;
+    padding: 1em;
+    color: var(--text-color)
+}
+
+ul li a:hover {
+    background-color: var(--text-color);
+    color: var(--accent1-color);
+    padding: 1em;
+}
+
+.active {
+    background-color: var(--text-color);
+    color: var(--accent1-color);
+    padding: 1em;
+}
+
+.flex {
+    display:flex;
+    flex-direction: column;
+}
+
+.bkgd-color {
+    width:15em;
+    height:5em;
+    background-color: var(--background-color);
+}
+
+.text-color {
+    width:15em;
+    height:5em;
+    background-color: var(--text-color);
+}
+
+.headfoot-color {
+    width:15em;
+    height:5em;
+    background-color: var(--accent1-color); 
+}
+
+.link-color {
+    width:15em;
+    height:5em;
+    background-color: var(--link-color); 
+}
+nav {
+    background-color: var(--accent1-color);
+}
+html {
+    background-color: var(--background-color);
+}
+h1 {
+    color: var(--text-color);
+    font-size: 3.3em;
+}
+a {
+    color: var(--link-color);
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
