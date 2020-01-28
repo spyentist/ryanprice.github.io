@@ -38,12 +38,10 @@ main {
     max-width: 95%;
 }
 
-main img {
-    width: 80%;
-}
-
 ul {
     list-style: none;
+    display: inline;
+    margin-left: 0px;
 }
 
 nav ul li a {
@@ -56,6 +54,7 @@ nav ul li a {
 
 nav ul li {
     padding-top: .5em;
+    text-align: center;
 }
 
 main {
@@ -65,13 +64,16 @@ main {
 
 iframe {
     max-width: 80%;
+    
 }
 
 footer {
     background-color: var(--accent1-color);
-    color:var(--text-color)
+    color:var(--text-color);
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
-
 
 /* Class Selectors */
 
@@ -86,12 +88,13 @@ footer {
 .topnav li:not(:first-child) {
     display: none;
 }
-
+.topnav {
+    text-align: center;
+}
 
 .topnav.responsive {
     position: relative;
 }
-
 
 .topnav.responsive a.icon{
     position: absolute;
@@ -99,12 +102,28 @@ footer {
     top: 0;
 }
 
-.topnav.responsive a {
+.topnav.responsive {
     float:none;
     display:block;
-    text-align: left;
+    text-align: center;
 }
 
+.hero h1 {
+    text-align: center;
+}
 
+.hero img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.summary {
+    background-color: var(--accent1-color);
+    opacity: 75%;
+}
+
+.forecast {
+    display:none;
+}
 
 /* ID selectors */
