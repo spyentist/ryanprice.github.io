@@ -3,8 +3,6 @@
     --text-color: #4D7298;
     --accent1-color: #E2B48E;
     --link-color: #2D3142;
-
-
 }
 
 .first_font {
@@ -99,6 +97,8 @@ h1 {
 }
 a {
     color: var(--link-color);
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 header {
