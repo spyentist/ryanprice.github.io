@@ -8,7 +8,7 @@
 /* HTML selectors, Need to Alphabatize */
 
 article {
-    background-color: var(--accent1-color);
+    background-color: lightgray;
     color:var(--text-color);
     padding: .5em
 }
@@ -101,6 +101,10 @@ ul {
 
 /* Class Selectors */
 
+.contact {
+    width: 100%;
+}
+
 .icon {
     align-self: center;
     grid-column: 1/2;
@@ -159,6 +163,7 @@ ul {
     justify-items: center;
     margin: 10px -10px -10px 10px;
     opacity: 0.8;
+    padding: .5em;
 }
 
 .forecast {
