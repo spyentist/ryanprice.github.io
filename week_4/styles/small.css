@@ -49,19 +49,21 @@ nav {
 }
 
 nav ul {
-    padding-bottom:1em;
+    display:block;
+    margin: 0;
+    padding: 1em;
 }
 
 nav ul li {
-    padding-top: .5em;
     text-align: center;
 }
 
-nav ul li a {
+nav ul a {
+    display:block;
     color:var(--link-color);
     text-decoration: none;
-    padding-top: .5em;
-    padding-bottom: 1em;
+    justify-self: center;
+    padding: 10px;
     /* background-color: black; */
 }
 
@@ -102,7 +104,7 @@ footer {
     display: none;
 }
 .topnav {
-    text-align: center;
+    justify-content: center;
 }
 
 .topnav.responsive {
@@ -132,11 +134,7 @@ footer {
 
 .summary {
     background-color: var(--accent1-color);
-    opacity: 50%;
-}
-
-.summary_text {
-    opacity:100%;
+    justify-items: center;
 }
 
 .forecast {
