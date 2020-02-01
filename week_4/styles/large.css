@@ -34,12 +34,17 @@ nav {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
+.forecast h3 {
+    grid-column: 3/4;
+}
+
 .day {
-    flex-direction: row;
     grid-row: 2/3;
     background-color: hotpink;
     height: 5em;
     width: 5em;
+    justify-self: center;
+    align-self: center;
 }
 
 .hero {
