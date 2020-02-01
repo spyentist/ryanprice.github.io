@@ -1,0 +1,74 @@
+@media only screen and (min-width: 32.5em) {
+
+/* HTML Selectors */
+
+nav {
+    padding-bottom: 1em;
+}
+
+ main {
+     width: 70%;
+}
+
+
+
+/* Class Selectors */
+
+
+.menu_icon {
+    display: none;
+}
+
+.topnav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.topnav li:not(:first-child) {
+        display: block;
+}
+
+.forecast {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.day {
+    flex-direction: row;
+    grid-row: 2/3;
+    background-color: hotpink;
+    height: 5em;
+    width: 5em;
+}
+
+.hero {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.hero h1 {
+    grid-column: 1/4;
+}
+
+.hero img {
+    height: 25em;
+    grid-column: 1/4;
+}
+
+.links a {
+    padding: 0 1.5em 0 1.5em;
+}
+
+.summary {
+    grid-column: 1/2;
+    margin:2em 0 6em 2em;
+}
+
+.topnav {
+    width: 70%;
+    margin: 0 auto;
+}
+
+
+
+}
