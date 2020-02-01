@@ -7,6 +7,10 @@
 
 /* HTML selectors */
 
+a {
+    font-family: 'Bebas Neue', cursive;
+}
+
 article {
     background-color: lightgray;
     color:var(--text-color);
@@ -26,6 +30,10 @@ footer {
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lato', sans-serif;
 }
 
 header {
@@ -54,15 +62,15 @@ html {
     background-color: var(--background-color);
 }
 
+iframe {
+    border:0 none;
+    width: 100%;
+    height: 100%;
+}
+
 img {
     margin: 0 auto;
     width: 100%;
-}
-
-.iframediv {
-    width: 80%; 
-    border:0;
-    margin: 0 auto;
 }
 
 main {
@@ -92,6 +100,11 @@ nav ul a {
     justify-self: center;
     padding: 10px;
     text-decoration: none;
+    font-size: 1.5em;
+}
+
+p {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
 ul {
@@ -139,6 +152,11 @@ ul {
     grid-row: 1/3;
     justify-self: center;
     max-width: 5em;
+}
+
+.iframediv {
+    width: 80%; 
+    margin: 0 auto;
 }
 
 .summary {
