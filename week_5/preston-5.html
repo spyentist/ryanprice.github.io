@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles\normalize.css">
+    <link rel="stylesheet" href="styles\small.css">
+    <link rel="stylesheet" href="styles\large.css">
+    <link rel="icon" href="/week_3/images/weathericon.png">
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Lato|Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+    <title>Preston</title>
+</head>
+<body onload="doInputOutput()">
+    <header>
+        <img src="images/weathericon.png" alt="Price Network Icon" class="icon">
+        <h1>Price Network Weather</h1>
+        <h3>Get Serious. Get Price Network Weather.</h3>
+    </header>
+    <nav>
+        <ul class="topnav" id="navigation">
+            <li class="menu_icon"><a href="javascript:void(0);" onclick="adaptiveMenu()">&#9776; Menu</a></li>
+            <li class="links"><a href="/index.html">Home</a></li>
+            <li class="links"><a href="#">Preston</a></li class="links">
+            <li class="links"><a href="#">Soda Springs</a></li class="links">
+            <li class="links"><a href="#">Fish Haven</a></li class="links">
+            <li class="links"><a href="#">Storm Center</a></li class="links">
+            <li class="links"><a href="#">Gallery</a></li class="links">
+        </ul>
+
+    </nav>
+    <main>
+        <h1 class="site_title">Preston</h1>
+        <div class="hero">
+            <img src="images/preston_hero.jpg" alt="hero image">
+            <section class="summary">
+                <h3>Weather Summary</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id euismod dolor. Maecenas laoreet, ante a gravida pretium, magna tellus pharetra ex, sed egestas tortor leo et lorem.</p>
+            </section>
+        </div>
+        <section class="forecast">
+            <h3>5-Day Forecast</h3>
+            <div class="day"></div>
+            <div class="day"></div>
+            <div class="day"></div>
+            <div class="day"></div>
+            <div class="day"></div>
+        </section>
+        <br/>
+        <article class="article">
+            <h2>Article Title</h2>
+            <h4>by Super Star Author</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum autem minus, similique ad eveniet neque architecto dolorem! Soluta rem sit dicta totam atque? Sit quis aut earum vel neque nisi.</p>
+            <img src="images/preston_sanctuary.JPG" alt="Preston Birds Of Prey Sanctuary">
+        </article>
+        
+    </main>
+    <footer>
+        <div class="contact">
+            <h2>Contact Information</h2>
+            <p>More information is still to come.</p>
+            <div class="iframediv">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21156.11761607768!2d-111.89564215760097!3d42.094129108035744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e1!3m2!1sen!2sus!4v1580231338876!5m2!1sen!2sus" allowfullscreen=""></iframe>
+        
+            </div>
+        </div>
+        &copy; <span id="year"></span> &starf; Price Network Weather &starf; <span id="curdate"></span>
+    </footer>
+</body>
+    <script src="scripts/script.js"></script>
+</html>
