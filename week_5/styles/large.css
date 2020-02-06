@@ -54,6 +54,10 @@ header h3 {
     font-size: 2em;
 }
 
+iframe {
+    display:block;
+}
+
 
 /* Class Selectors */
 
