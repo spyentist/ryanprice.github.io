@@ -23,3 +23,16 @@ function adaptiveMenu() {
     }
     
 }
+
+function weatherConditions() {
+    var temp, wind, humid;
+
+    temp = "50" + "&deg;";
+    wind = "10" + "mph";
+    humid = "15" + "&percnt;";
+    
+    
+    document.getElementById("curTemp").innerHTML = temp;
+    document.getElementById("windSpeed").innerHTML = wind;
+    document.getElementById("humidity").innerHTML = humid;
+}

@@ -97,6 +97,7 @@ header h3 {
 
 .fore_contain h3 {
     text-align: center;
+    display: block;
 }
 
 .day {

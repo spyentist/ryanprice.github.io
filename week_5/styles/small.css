@@ -8,7 +8,9 @@
 /* HTML selectors */
 
 a {
+    color:var(--link-color);
     font-family: 'Bebas Neue', cursive;
+    text-decoration: none;
 }
 
 article {
@@ -29,7 +31,9 @@ footer {
     color:var(--text-color);
     display:flex;
     flex-wrap: wrap;
+    height: 3em;
     justify-content: center;
+    align-content: center;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -95,16 +99,24 @@ nav ul li {
 }
 
 nav ul a {
-    color:var(--link-color);
     display:block;
     justify-self: center;
     padding: 10px;
-    text-decoration: none;
     font-size: 1.5em;
 }
 
 p {
     font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+table, th, tr, td {
+    border: 1px dashed hotpink;
+    text-align: center;
+    padding: 5px;
+}
+
+table {
+    width: 100%;
 }
 
 ul {
@@ -122,6 +134,16 @@ ul {
     border: 1px dashed hotpink;
     position: relative;
     height: 300px;
+}
+
+.fore_heading {
+    font-size: 2.5em;
+    
+}
+
+.fore_contain {
+    /* display:none; */
+    background-color: limegreen;
 }
 
 .service {
@@ -155,10 +177,6 @@ ul {
     bottom: .25em;
     left: 0;
     right: 0;
-}
-
-.fore_contain {
-    display:none;
 }
 
 .hero {
@@ -222,3 +240,13 @@ ul {
 }
 
 /* ID selectors */
+
+#pancakes {
+    display:none;
+}
+
+#pancakes_show {
+    margin-top: 2em;
+    height:30px;
+    background-color: var(--accent1-color);
+}
