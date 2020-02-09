@@ -61,23 +61,24 @@ iframe {
 
 /* Class Selectors */
 
+.service {
+    position: absolute;
+    top: 0px;
+    left: 15px;
+}
+
+.service2 {
+    position: absolute;
+    top: 40px;
+    left: 50px;
+}
+
 .contact {
-    display: flex;
-    justify-content: space-around;
+    height: 300px;
 }
 
-.contact h2 {
-    order: 2;
-}
-
-.contact iframe {
-    order: 1;
-    width: 75%;
-    padding-left: 3em;
-}
-
-.contact p {
-    order: 3;
+.fore_contain{
+    display: block;;
 }
 
 .menu_icon {
