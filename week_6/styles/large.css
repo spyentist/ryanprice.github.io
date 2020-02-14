@@ -11,10 +11,6 @@
 
 /* HTML Selectors */
 
-nav {
-    padding-bottom: 1em;
-}
-
  main {
      width: 70%;
 }
@@ -58,6 +54,10 @@ iframe {
     display:block;
 }
 
+nav ul {
+    margin: 0 auto;
+}
+
 
 /* Class Selectors */
 
@@ -79,20 +79,6 @@ iframe {
 
 .fore_contain{
     display: block;;
-}
-
-.menu_icon {
-    display: none;
-}
-
-.topnav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.topnav li:not(:first-child) {
-        display: block;
 }
 
 .forecast {
@@ -122,14 +108,32 @@ iframe {
     height:100%;
 }
 
-.links a {
-    padding: 0 1.5em 0 1.5em;
+.navigation {
+    display: flex;
+    justify-content: center;
 }
 
-.topnav {
-    width: 70%;
-    margin: 0 auto;
+.navigation li {
+    display: block; /* needed because of state in small view */
+    flex: 1 1 100%;
 }
+
+.navigation li a {
+    color: var(--link-color);
+    text-align: center;
+}
+
+.navigation li:first-child {
+    display: none;
+}
+
+
+
+
+
+
+
+
 
 
 

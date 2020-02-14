@@ -21,7 +21,7 @@
         <h3>Get Serious. Get Price Network Weather.</h3>
     </header>
     <nav>
-        <ul class="topnav" id="navigation">
+        <ul class="navigation" id="navigation"> 
             <li class="menu_icon"><a href="javascript:void(0);" onclick="adaptiveMenu()">&#9776; Menu</a></li>
             <li class="links"><a href="/index.html">Home</a></li>
             <li class="links"><a href="#" class="active">Preston</a></li>
@@ -35,12 +35,18 @@
     <main>
         <h1 class="site_title">Preston</h1>
         <div class="hero">
-            <img src="images/preston_hero.jpg" alt="hero image">
+            <!-- <img src="images/preston_hero.jpg" alt="hero image"> -->
+            <picture>
+                <source srcset="images/hero_image_small.jpg" media="(max-width: 32.5em)">
+                <source srcset="images/hero_image_medium.jpg" media="(max-width: 65em)">
+                <source srcset="images/hero_image_large.jpg" media="(min-width: 65.1em)">
+                <img src="images/hero_image_small.jpg" alt="Hero Image"></picture>
             <section class="summary">
                 <h3>Weather Summary</h3>
                 <div><span>Current Temperature: </span><span id="curTemp"></span></div>
                 <div><span>Wind Speed: </span><span id="windSpeed"></span></div>
                 <div><span>Humidity: </span><span id="humidity"></span></div>
+                <div id="winddiv"><span>Feels Like: </span><span id="windchill"></span></div>
             </section>
         </div>
         <!-- <div class="fore_contain">
@@ -106,5 +112,6 @@
         &copy; <span id="year"></span> &starf; Price Network Weather &starf; <span id="curdate"></span>
     </footer>
 </body>
+    <script src="scripts/webfontloader.js"></script>
     <script src="scripts/script.js"></script>
 </html>

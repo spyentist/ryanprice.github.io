@@ -94,40 +94,13 @@ main {
 }
 
 nav {
+	margin: 0 auto;
     background-color: lightgray;
-    padding:0;
 }
-
 nav ul {
-    display:block;
-    margin: 0;
-    padding-top: 1em;
     padding-left: 0;
-}
-
-nav ul li {
     text-align: center;
-    display:block;
-}
-
-nav ul li a {
-    display:block;
-    justify-self: center;
-    padding: 10px;
     font-size: 1.5em;
-    height:100%;
-}
-
-nav ul li a:hover {
-    background-color: var(--link-color);
-    color:lightgray;
-    height:100%;
-
-}
-
-nav ul li a.active {
-    background-color: var(--link-color);
-    color:lightgray;
 }
 
 p {
@@ -236,35 +209,48 @@ ul {
     max-width: 5em;
 }
 
-.links {
-    align-self: center;
-}
-
-.topnav .menu_icon {
-    padding-bottom: 1em;
-}
-
-.topnav li:not(:first-child) {
-    display: none;
-}
-.topnav {
-    justify-content: center;
-}
-
-.topnav.responsive {
-    position: relative;
-}
-
-.topnav.responsive a.icon{
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-
-.topnav.responsive {
+.links a, .menu_icon a {
     display:block;
-    float:none;
+    width:100%;
+    padding: .5em 0 .5em 0;
+}
+
+.links a:hover, .menu_icon a:hover {
+	color: lightgray;
+	background-color: var(--link-color);
+	/* font-weight: 700; */
+}
+
+.navigation {
+	list-style: none;
+    padding: 0;
     text-align: center;
+}
+
+.navigation a {
+	display: block;
+    color: var(--link-color);
+    padding: .5em 0 .5em 0;
+	text-align: center;
+	text-decoration: none;
+}
+
+.navigation a:hover {
+	color: lightgray;
+	background-color: var(--link-color);
+	font-weight: 700;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.navigation li {
+	display: none;
+}
+
+.responsive li {
+	display: block;
 }
 
 /* ID selectors */
