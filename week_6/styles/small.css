@@ -101,6 +101,7 @@ nav ul {
     padding-left: 0;
     text-align: center;
     font-size: 1.5em;
+    margin: 0 auto;
 }
 
 p {
@@ -108,7 +109,7 @@ p {
 }
 
 table, th, tr, td {
-    /* border: 1px dashed hotpink; */
+    /* border: 1px solid black; */
     text-align: center;
     padding: 5px;
 }

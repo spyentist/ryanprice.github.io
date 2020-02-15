@@ -61,7 +61,8 @@ function weatherConditions() {
         windchill = 35.74 +  0.6215 * temp - 35.75 * Math.pow(wind, 0.16) + 0.4275 * temp * Math.pow(wind, 0.16);
         windchilldisplay = windchill.toFixed(0) + '&deg;'
     } else {
-        document.querySelector("#winddiv").style.display="none";
+        // document.querySelector("#winddiv").style.display="none";
+        windchilldisplay = tempdeg;
     }
     
     document.getElementById("curTemp").innerHTML = tempdeg;
