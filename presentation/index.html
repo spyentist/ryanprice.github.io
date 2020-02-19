@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <title>The Prices</title>
+        <meta charset="utf-8">
+        <!-- import the webpage's stylesheet -->
+        <link rel="stylesheet" href="/presentation/styles/small.css">
+        <!-- import the webpage's javascript file -->
+        <script src="/script.js" defer></script>
+    </head>  
+    <body>
+        <br />
+        <h1>Transforming - #pricelessnomore Example</h1>
+        <span class="photo-collage">
+            <img src="https://cdn.glitch.com/77f7de13-1d81-494d-8a35-cdb078f0ffee%2F72365107_2645169395704235_5037893967014789120_n.jpg?v=1571773034985" class="imagegroup-1" alt="R+N at Meridian Temple">
+            <img src="https://cdn.glitch.com/77f7de13-1d81-494d-8a35-cdb078f0ffee%2F66393838_2558932377661271_701726510033141760_n.jpg?v=1573704001266" class="imagegroup-2" alt="Car ride to Utah">
+            <img src="https://cdn.glitch.com/77f7de13-1d81-494d-8a35-cdb078f0ffee%2FIMG_0778.jpg?v=1573704184185" class="imagegroup-3" alt="4th of July Race">
+            <img src="https://cdn.glitch.com/77f7de13-1d81-494d-8a35-cdb078f0ffee%2F8A3C456D-5AA9-49A1-BADB-140FFC052ECF.png?v=1573105742506" class="imagegroup-5" alt="Nichole's ring on Ryan's face">
+            <img src="https://cdn.glitch.com/77f7de13-1d81-494d-8a35-cdb078f0ffee%2Fr%20and%20n.jpg?v=1573601484735" class="rn_center" alt="R+N">
+            <img src="https://cdn.glitch.com/77f7de13-1d81-494d-8a35-cdb078f0ffee%2FRyNichole%5BEdited%5D.JPG?v=1573105778747" class="imagegroup-6" alt="Nichole kissing Ryan">
+            <img src="https://cdn.glitch.com/77f7de13-1d81-494d-8a35-cdb078f0ffee%2FFD7D1C18-3242-48E5-9463-4B764189E074.png?v=1573105810407" class="imagegroup-7" alt="Sunset proposal">
+            <img src="https://cdn.glitch.com/77f7de13-1d81-494d-8a35-cdb078f0ffee%2F11.jpg?v=1573601488573" class="imagegroup-8" alt="Ryan kissing Nichole">
+        </span>
+        <br />
+        <br />
+        <h1>Transitioning - Divs</h1>
+        <span>
+            <div class="div1"></div>
+            <p>Width - growing over 2 seconds
+                <br>
+                .div1 {
+                    background-color: red;
+                    transition-property: width;
+                    transition-duration: 2s;
+                    }
+                    <br>
+                    .div1:hover {
+                        width: 300px;
+                    }
+            </p>
+            <br />
+            <div class="div2"></div>
+            <p>Height - growing over 3 seconds
+                <br>
+                .div2 {
+                    background-color: blue;
+                    transition: height 4s;
+                }
+                <br>
+                .div2:hover {
+                    height: 300px;
+                }
+            </p>
+            <br />
+            <div class="div3"></div>
+            <p>Height and Width - Growing Height over 4 seconds and Width over 1 seconds
+                <br>
+                .div3 {
+                    background-color: green;
+                    transition: height 4s, width 1s;
+                }
+                <br>
+                .div3:hover {
+                height: 300px;
+                width: 400px;
+                }
+            </p>
+            <br />
+            <div class="div4"></div>
+            <p>Delay - Width grows after hovering for 1 second.
+                <br>
+                .div4 {
+                    background-color: black;
+                    transition: width 5s;
+                    transition-delay: 1s;
+                }
+                <br>
+                .div4:hover {
+                    height: 300px;
+                    width: 400px;
+                }
+            </p>
+            <br />
+            <div class="div5"></div>
+            <p>Timing function - sets the transition to end slowly.
+                <br>
+                .div5 {
+                    background-color: hotpink;
+                    transition: height 4s, width 1s;
+                    transition-timing-function: ease-out;
+                }
+                <br>
+                .div5:hover {
+                    height: 300px;
+                    width: 400px;
+                }
+            </p>
+        </span>
+    </body>
+</html>
