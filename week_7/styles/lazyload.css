@@ -1,7 +1,15 @@
+.pictures {
+    display: flex;
+    flex-direction: column;
+}
+
 img {
     height:300px;
     width:400px;
     filter: blur(0em);
-    transition: filter 5s;
+    transition: filter 3s;
 }
 
+img[data-src] {
+    filter: blur(0.2em);
+}
