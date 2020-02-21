@@ -15,10 +15,10 @@ function doInputOutput() {
 
     const aside = document.querySelector("aside"); 
 
-    if (date === 5) {
+    if (date === 4) {
         aside.style.display ="block";
     } else {
-        aside.style.display ="none";
+        aside.style.display = "none";
     }
 
 

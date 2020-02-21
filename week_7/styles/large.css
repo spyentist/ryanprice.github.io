@@ -9,8 +9,12 @@ main {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+figure {
+    transition-duration: 1.5s;
+}
+
 figure:hover {
-    box-shadow: 5px 10px black;
+    box-shadow: 5px 10px 5px black;
     background-color: lightgray;
 }
 
