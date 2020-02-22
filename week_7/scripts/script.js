@@ -15,7 +15,7 @@ function doInputOutput() {
 
     const aside = document.querySelector("aside"); 
 
-    if (date === 5) {
+    if (weekyDays === "Friday") {
         aside.style.display ="block";
     } else {
         aside.style.display = "none";
