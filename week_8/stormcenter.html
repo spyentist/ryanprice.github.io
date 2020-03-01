@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="styles\large.css">
     <link rel="icon" href="/week_3/images/weathericon.png">
     <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Lato|Yanone+Kaffeesatz&display=swap" rel="stylesheet">
-    <title>Preston</title>
+    <title>Storm Center</title>
 </head>
 <body onload="doInputOutput(), weatherConditions()">
     <header>
@@ -31,12 +31,68 @@
 
     </nav>
     <main>
-        <h1 class="site_title"></h1>
+        <h1 class="site_title">Storm Center</h1>
+        <form action="thankyou.html" method="GET">
+            <div>
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="johndoe@domain.com">
+            </div>
+            <div>
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="tel" id="phoneNumber" required>
+            </div>
+            <div>
+                <label for="zip">Zip Code:</label>
+                <input type="number" id="zip" required>
+            </div>
+            <div>
+                <label for="sType">Storm Type:</label>
+                <input list="sTypes" id="sType">
+                <datalist id="sTypes">
+                    <option value="Flash Flood"></option>
+                    <option value="Hail"></option>
+                    <option value="Hurricane"></option>
+                    <option value="Thunderstorm"></option>
+                    <option value="Tornado"></option>
+                </datalist>
+            </div>
+            <div>
+                <label for="sSeverity">Storm Severity: <span id="ratingvalue">5</span></label>
+                <input type="range" min="1" max="10" value="5" id="sSeverity" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+            </div>
+     </label>
+            <div>
+                <label for="sRegion">Storm Region:</label>
+                <select name="sRegions" id="sRegion">
+                    <option value="Select Region" selected disabled>Select Region</option>
+                    <option value="Preston">Preston</option>
+                    <option value="Soda Springs">Soda Springs</option>
+                    <option value="Fish Haven">Fish Haven</option>
+                </select>
+            </div>
+            <div>
+                <label for="danger">User In-Danger Level:</label>
+                <input type="radio" id="danger" value="yes">Yes
+                <input type="radio" id="danger" value="no">No
+                <input type="radio" id="danger" value="maybe">Maybe
+            </div>
+            <div>
+                <label for="aInfo">Additional Information:</label>
+                <textarea type="textarea" id="aInfo"></textarea>
+            </div>
+            <div>
+                <input type="submit" value="submit" src="/week_8/thankyou.html">
+            </div>
+        </form>
     </main>
     <footer>
         &copy; <span id="year"></span> &starf; Price Network Weather &starf; <span id="curdate"></span>
     </footer>
 </body>
-    <script src="scripts/webfontloader.js"></script>
-    <script src="scripts/script.js"></script>
+    <script src="/week_8/scripts/script.js"></script>
+    <script src="/week_8/scripts/form.js"></script>
 </html>

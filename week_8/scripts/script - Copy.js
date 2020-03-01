@@ -12,7 +12,7 @@ function doInputOutput() {
     var today_3 = weekDays[date.getDay()+3]; 
     var today_4 = weekDays[date.getDay()+4];
 
-    const aside = document.querySelector("aside"); 
+    const aside  = document.querySelector("aside"); 
 
     if (aside != null){
         if (weekDay === "Friday") {

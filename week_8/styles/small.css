@@ -45,6 +45,18 @@ footer {
     align-content: center;
 }
 
+form {
+    background-color: lightgray;
+    width:50%;
+    margin: 0 auto;
+}
+
+input, select, textarea {
+    margin-top: 10px;
+    justify-self: center;
+}
+
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Lato', sans-serif;
 }
@@ -91,6 +103,7 @@ img {
 main {
     margin: 0 auto;
     width:90%;
+    text-align: center;
 }
 
 nav {
