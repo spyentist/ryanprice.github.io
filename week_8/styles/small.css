@@ -48,7 +48,8 @@ footer {
 form {
     background-color: lightgray;
     width:50%;
-    margin: 0 auto;
+    margin: 2em auto;
+    padding-bottom: 1em;
 }
 
 input, select, textarea {

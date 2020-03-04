@@ -1,32 +1,47 @@
+let date = new Date();
+let weekDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"];
+let weekDay = weekDays[date.getDay()];
+let dayNum = date.getDate();
+let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+let month = months[date.getMonth()];
+let year = date.getUTCFullYear();
+let today = weekDay;
+let today_1 = weekDays[date.getDay()+1];
+let today_2  = weekDays[date.getDay()+2];
+let today_3 = weekDays[date.getDay()+3]; 
+let today_4 = weekDays[date.getDay()+4];
+
+const aside  = document.querySelector("aside"); 
+const forecast = document.querySelector("fore-contain")
+
 function doInputOutput() {
-    var date = new Date();
-    var weekDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"];
-    let weekDay = weekDays[date.getDay()];
-    var dayNum = date.getDate();
-    var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-    var month = months[date.getMonth()];
-    var year = date.getUTCFullYear();
-    var today = weekDay;
-    var today_1 = weekDays[date.getDay()+1];
-    var today_2  = weekDays[date.getDay()+2];
-    var today_3 = weekDays[date.getDay()+3]; 
-    var today_4 = weekDays[date.getDay()+4];
 
-    const aside  = document.querySelector("aside"); 
-
+    // Checks to see if the pancakes aside is in the document.
     if (aside != null){
-        if (weekDay === "Friday") {
-            aside.style.display ="block";
-        } else {
-            aside.style.display = "none";
-        }
+        pancakes();
+    }
+
+    if (forecast != null) {
+        weatherConditions();
     }
 
 
 
-    var random = parseInt(Math.random() * 100);    
+
+}
+
+function pancakes() {
+    if (weekDay === "Friday") {
+        aside.style.display ="block";
+    } else {
+        aside.style.display = "none";
+    }
+}
+
+
+   
     
-    var display = weekDay + ", " + dayNum + " " + month + " " + year;
+    let display = weekDay + ", " + dayNum + " " + month + " " + year;
 
     document.getElementById("curdate").innerHTML = display;
     document.getElementById("year").innerHTML = year;
@@ -35,7 +50,7 @@ function doInputOutput() {
     document.getElementById("day3").innerHTML = today_2;
     document.getElementById("day4").innerHTML = today_3;
     document.getElementById("day5").innerHTML = today_4;
-    document.getElementById("tempH1").innerHTML = random;
+    document.getElementById("tempH1").innerHTML = parseInt(Math.random() * 100);
     document.getElementById("tempH2").innerHTML = parseInt(Math.random() * 100);
     document.getElementById("tempH3").innerHTML = parseInt(Math.random() * 100);
     document.getElementById("tempH4").innerHTML = parseInt(Math.random() * 100);
@@ -45,11 +60,11 @@ function doInputOutput() {
     document.getElementById("tempL3").innerHTML = parseInt(Math.random() * 10);
     document.getElementById("tempL4").innerHTML = parseInt(Math.random() * 10);
     document.getElementById("tempL5").innerHTML = parseInt(Math.random() * 10);
-}
+
 
 
 function weatherConditions() {
-    var temp, wind, humid, windchill;
+    let temp, wind, humid, windchill;
 
     temp =parseInt(Math.random()*100);
     wind = parseInt(Math.random()*10);
@@ -73,7 +88,7 @@ function weatherConditions() {
 }
 
 function adaptiveMenu() {
-    var links = document.getElementById("navigation");
+    let links = document.getElementById("navigation");
     if (links.className === "navigation") {
         links.className += ".responsive";
     } else {
