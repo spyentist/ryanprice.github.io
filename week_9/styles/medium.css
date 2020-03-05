@@ -11,28 +11,28 @@
 
 /* HTML Selectors */
 
-article {
+.town_article {
     position: relative;
     height: 250px;
     padding-bottom: 3em;
 }
 
-article h2 {
+.town_article h2 {
     position: absolute;
 }
 
-article h4 {
+.town_article h4 {
     display: none;
 }
 
-article img {
+.town_article img {
     position:absolute;
     width: 40%;
     top: 2em;
     right:2em;
 }
 
-article p {
+.town_article p {
     position: absolute;
     top: 3em;
     max-width: 50%;

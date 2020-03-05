@@ -138,8 +138,10 @@ ul {
 }
 
 .citysummary {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
+    /* display: flex; */
+    /* flex-direction: column; */
 }
 
 .city_card {

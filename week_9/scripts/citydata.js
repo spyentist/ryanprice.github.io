@@ -27,10 +27,10 @@ fetch('https://byui-cit230.github.io/weather/data/towndata.json')
         
             h1.textContent = town.name;
             h3.textContent = town.motto;
-            p.textContent = town.yearFounded;
-            p2.textContent = town.population;
-            p3.textContent = town.averageRainfall;
-            image.setAttribute('src', town.photo);
+            p.textContent = 'Year Founded: ' + town.yearFounded;
+            p2.textContent = 'Population: ' + town.population;
+            p3.textContent = 'Average Rainfall: ' + town.averageRainfall;
+            image.setAttribute('src', "images/" + town.photo);
             image.setAttribute('alt', town.name + " Photo");
 
         
