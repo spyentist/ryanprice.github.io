@@ -20,9 +20,11 @@ figure:hover {
     filter: saturate(150%) brightness(120%);
 }
 
-.citysummary {
+#citysummary {
     /* flex-direction: row; */
+    display:grid;
     grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px ;
 }
 
 

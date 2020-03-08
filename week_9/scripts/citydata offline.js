@@ -1,4 +1,4 @@
-fetch('https://byui-cit230.github.io/weather/data/towndata.json')
+fetch('/week_9/scripts/towndata.json')
     .then(result => {
         return result.json();
     })
@@ -28,8 +28,8 @@ fetch('https://byui-cit230.github.io/weather/data/towndata.json')
             h1.textContent = town.name;
             h3.textContent = town.motto;
             p.textContent = 'Year Founded: ' + town.yearFounded;
-            p2.textContent = 'Population: ' + town.currentPopulation;
-            p3.textContent = 'Average Rainfall: ' + town.averageRainfall + '"';
+            p2.textContent = 'Population: ' + town.population;
+            p3.textContent = 'Average Rainfall: ' + town.averageRainfall;
             image.setAttribute('src', "images/" + town.photo);
             image.setAttribute('alt', town.name + " Photo");
 
@@ -52,6 +52,6 @@ fetch('https://byui-cit230.github.io/weather/data/towndata.json')
 
     })
     .catch(
-        document.getElementById('site_title').textContent="Site not available"
+
     )
 
