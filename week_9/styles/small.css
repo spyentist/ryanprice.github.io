@@ -142,11 +142,18 @@ ul {
     grid-template-columns: 1fr;
     /* display: flex; */
     /* flex-direction: column; */
+    
 }
 
 .city_card {
     background-color: lightgray;
     text-align: center;
+    margin-bottom: 1.5em;
+}
+
+.city_card img {
+    width:80%;
+    box-shadow: 0px 0px 6px 4px darkgray;
 }
 
 .email {

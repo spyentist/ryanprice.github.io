@@ -9,9 +9,9 @@ fetch('https://byui-cit230.github.io/weather/data/towndata.json')
             town => {
                 if(town.name === 'Fish Haven') {
                     buildCards(town);
-                } else if (town.name === 'Preston') {
-                    buildCards(town);
                 } else if (town.name === 'Soda Springs') {
+                    buildCards(town);
+                } else if (town.name === 'Preston') {
                     buildCards(town);
                 }
             }
