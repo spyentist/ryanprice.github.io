@@ -1,0 +1,54 @@
+footer {
+    text-align: center;
+}
+
+main {
+    max-width: 90%;
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: #4D4D96;
+}
+
+h2 {
+    color: #4D4D96;
+}
+
+img {
+    box-shadow: 0px 0px 6px 4px gray;
+    width: 60%;
+}
+
+section {
+    background-color: #B9B9CC;
+    padding: 3px;
+    text-align: center;
+    width: 100%;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+}
+
+@media only screen and (min-width: 32.5em) {
+.cards {
+    grid-template-columns: 1fr 1fr;
+}
+}
+
+
+@media only screen and (min-width: 64em) {
+.cards {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+}
+
+#example {
+    width:100%;
+    display:none;
+}
