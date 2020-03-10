@@ -32,6 +32,8 @@ function doInputOutput() {
     if (summary != null) {
         weatherConditions();
     }
+
+    
 }
 
 // Pancake function to hide the aside banner. (Working)
@@ -71,26 +73,45 @@ function forecasting() {
 // function that does Hero image summary for current temps. (Working)
 function weatherConditions() {
     let temp, wind, humid, windchill;
+    const apiURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&APPID=d371a45960fcec8ac86717a7368063eb&units=imperial';
 
-    temp =parseInt(Math.random()*100);
-    wind = parseInt(Math.random()*10);
+
+    fetch(apiURL)
+        .then((response) => response.json())
+        .then((jsObject) => {
+            console.log(jsObject);
+            
+       
+
+    temp = jsObject.main.temp;
+    wind = jsObject.wind.speed;
     tempdeg = temp + "&deg;";
     windspeed = wind + "mph";
-    humid = "15" + "&percnt;";
+    humid =  + "&percnt;";
+    windchill = jsObject.main.feels_like;
+    windchilldisplay = windchill + "&deg;"
     
-    
-    if(temp <= 50 && wind >= 3) {
-        windchill = 35.74 +  0.6215 * temp - 35.75 * Math.pow(wind, 0.16) + 0.4275 * temp * Math.pow(wind, 0.16);
-        windchilldisplay = windchill.toFixed(0) + '&deg;'
-    } else {
-        // document.querySelector("#winddiv").style.display="none";
-        windchilldisplay = tempdeg;
-    }
+    //OLD WINDCHILL CALCULATOR
+    // if(temp <= 50 && wind >= 3) {
+    //     windchill = 35.74 +  0.6215 * temp - 35.75 * Math.pow(wind, 0.16) + 0.4275 * temp * Math.pow(wind, 0.16);
+    //     windchilldisplay = windchill.toFixed(0) + '&deg;'
+    // } else {
+    //     // document.querySelector("#winddiv").style.display="none";
+    //     windchilldisplay = tempdeg;
+    // }
     
     document.getElementById("curTemp").innerHTML = tempdeg;
     document.getElementById("windSpeed").innerHTML = windspeed;
     document.getElementById("humidity").innerHTML = humid;
     document.getElementById("windchill").innerHTML = windchilldisplay;
+
+});
+
+
+
+
+
+
 }
 
 
