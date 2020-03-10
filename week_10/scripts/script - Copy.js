@@ -87,7 +87,7 @@ function weatherConditions() {
     wind = jsObject.wind.speed;
     tempdeg = temp + "&deg;";
     windspeed = wind + "mph";
-    humid =  + "&percnt;";
+    humid = jsObject.main.humidity + "&percnt;";
     windchill = jsObject.main.feels_like;
     windchilldisplay = windchill + "&deg;"
     
