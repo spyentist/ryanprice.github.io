@@ -1,3 +1,4 @@
+// Various in page variables
 let date = new Date();
 let weekDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"];
 let weekDay = weekDays[date.getDay()];
@@ -5,31 +6,35 @@ let dayNum = date.getDate();
 let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 let month = months[date.getMonth()];
 let year = date.getUTCFullYear();
-let today = weekDay;
-let today_1 = weekDays[date.getDay()+1];
-let today_2  = weekDays[date.getDay()+2];
-let today_3 = weekDays[date.getDay()+3]; 
-let today_4 = weekDays[date.getDay()+4];
+let display = weekDay + ", " + dayNum + " " + month + " " + year;
 
 const aside  = document.querySelector("aside"); 
-const forecast = document.querySelector("fore-contain")
+const forecast = document.querySelector(".fore_contain"); 
+const summary = document.querySelector(".summary");
+
+    // Footer declarations
+    document.getElementById("curdate").innerHTML = display;
+    document.getElementById("year").innerHTML = year;
+
+
 
 function doInputOutput() {
-
-    // Checks to see if the pancakes aside is in the document.
+    // Checks to see if the pancakes aside is in the document. (Working)
     if (aside != null){
         pancakes();
     }
 
+    // Check to see if the forecast is in the document. (Working)
     if (forecast != null) {
-        weatherConditions();
+        forecasting();
     }
 
-
-
-
+    if (summary != null) {
+        weatherConditions();
+    }
 }
 
+// Pancake function to hide the aside banner. (Working)
 function pancakes() {
     if (weekDay === "Friday") {
         aside.style.display ="block";
@@ -38,13 +43,14 @@ function pancakes() {
     }
 }
 
+// function to show the weekdays and their temps. (Working)
+function forecasting() {
+    let today = weekDay;
+    let today_1 = weekDays[date.getDay()+1];
+    let today_2  = weekDays[date.getDay()+2];
+    let today_3 = weekDays[date.getDay()+3]; 
+    let today_4 = weekDays[date.getDay()+4];
 
-   
-    
-    let display = weekDay + ", " + dayNum + " " + month + " " + year;
-
-    document.getElementById("curdate").innerHTML = display;
-    document.getElementById("year").innerHTML = year;
     document.getElementById("day1").innerHTML = today;
     document.getElementById("day2").innerHTML = today_1;
     document.getElementById("day3").innerHTML = today_2;
@@ -60,9 +66,9 @@ function pancakes() {
     document.getElementById("tempL3").innerHTML = parseInt(Math.random() * 10);
     document.getElementById("tempL4").innerHTML = parseInt(Math.random() * 10);
     document.getElementById("tempL5").innerHTML = parseInt(Math.random() * 10);
+}
 
-
-
+// function that does Hero image summary for current temps. (Working)
 function weatherConditions() {
     let temp, wind, humid, windchill;
 
@@ -87,6 +93,8 @@ function weatherConditions() {
     document.getElementById("windchill").innerHTML = windchilldisplay;
 }
 
+
+// Adaptive Menu (Working)
 function adaptiveMenu() {
     let links = document.getElementById("navigation");
     if (links.className === "navigation") {
@@ -94,7 +102,6 @@ function adaptiveMenu() {
     } else {
         links.className = "navigation";
     }
-    
 }
 
 WebFont.load({
