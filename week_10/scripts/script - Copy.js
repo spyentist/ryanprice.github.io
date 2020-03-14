@@ -17,7 +17,7 @@ const summary = document.querySelector(".summary");
     document.getElementById("year").innerHTML = year;
 
 
-
+//Original function to check for loadable data
 function doInputOutput() {
     // Checks to see if the pancakes aside is in the document. (Working)
     if (aside != null){
@@ -45,66 +45,82 @@ function pancakes() {
     }
 }
 
-// function to show the weekdays and their temps. (Working)
+// function to show the weekdays and their temps. (Working with JS variables)
 function forecasting() {
-    let today = weekDay;
-    let today_1 = weekDays[date.getDay()+1];
-    let today_2  = weekDays[date.getDay()+2];
-    let today_3 = weekDays[date.getDay()+3]; 
-    let today_4 = weekDays[date.getDay()+4];
 
-    document.getElementById("day1").innerHTML = today;
-    document.getElementById("day2").innerHTML = today_1;
-    document.getElementById("day3").innerHTML = today_2;
-    document.getElementById("day4").innerHTML = today_3;
-    document.getElementById("day5").innerHTML = today_4;
-    document.getElementById("tempH1").innerHTML = parseInt(Math.random() * 100);
-    document.getElementById("tempH2").innerHTML = parseInt(Math.random() * 100);
-    document.getElementById("tempH3").innerHTML = parseInt(Math.random() * 100);
-    document.getElementById("tempH4").innerHTML = parseInt(Math.random() * 100);
-    document.getElementById("tempH5").innerHTML = parseInt(Math.random() * 100);
-    document.getElementById("tempL1").innerHTML = parseInt(Math.random() * 10);
-    document.getElementById("tempL2").innerHTML = parseInt(Math.random() * 10);
-    document.getElementById("tempL3").innerHTML = parseInt(Math.random() * 10);
-    document.getElementById("tempL4").innerHTML = parseInt(Math.random() * 10);
-    document.getElementById("tempL5").innerHTML = parseInt(Math.random() * 10);
+    const apiURLF = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&APPID=d371a45960fcec8ac86717a7368063eb&units=imperial';
+    fetch(apiURLF)
+    .then((response) => response.json())
+    .then((jsObject) => {
+        console.log(jsObject);
+        let i = 1;
+
+        jsObject.list.forEach(
+            forecast => {
+                if(forecast.dt_txt.includes('18:00')) {
+                    let forecastdate = new Date(forecast.dt_txt.replace(' ', 'T'));
+                    let day = weekDays[forecastdate.getDay()]; 
+                    //insert into each day
+                    document.getElementById("day" + i).innerHTML = day;
+
+                    // insert high temp
+                    document.getElementById("tempH" + i).innerHTML = forecast.main.temp_max.toFixed(0) + "&deg;";
+
+
+                    // Class note, to get min temp check documentation from OWM and find the hour that has the min temp then create an if statement for the low.
+                    // insert low temp
+                    // document.getElementById("tempL" + i).innerHTML = forecast.main.temp_min.toFixed(0) + "&deg;";
+
+                    // Setting the variables for the image.
+                    document.getElementById("tempL" + i).setAttribute('src', 'https://openweathermap.org/img/w/' + forecast.weather[0].icon + '.png');
+                    document.getElementById("tempL" + i).setAttribute('alt', forecast.weather[0].icon + '.png');
+
+
+                    //increase counter vairable
+                    i++;
+                }
+            }
+        )
+    });
 }
 
 // function that does Hero image summary for current temps. (Working)
 function weatherConditions() {
-    let temp, wind, humid, windchill;
-    const apiURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&APPID=d371a45960fcec8ac86717a7368063eb&units=imperial';
+    let temp, wind, humid, windchill, conditions;
+    const apiURLW = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&APPID=d371a45960fcec8ac86717a7368063eb&units=imperial';
 
 
-    fetch(apiURL)
+    fetch(apiURLW)
         .then((response) => response.json())
         .then((jsObject) => {
             console.log(jsObject);
             
        
 
-    temp = jsObject.main.temp;
-    wind = jsObject.wind.speed;
+    temp = jsObject.main.temp.toFixed(0);
+    wind = jsObject.wind.speed.toFixed(0);
     tempdeg = temp + "&deg;";
-    windspeed = wind + "mph";
-    humid = jsObject.main.humidity + "&percnt;";
-    windchill = jsObject.main.feels_like;
-    windchilldisplay = windchill + "&deg;"
+    windspeed = wind + " mph";
+    humid = jsObject.main.humidity + "&percnt;"
+    windchilldisplay = jsObject.main.feels_like.toFixed(0) + "&deg;";
+    conditions = jsObject.weather[0].main;
+
     
+    /*
     //OLD WINDCHILL CALCULATOR
-    // if(temp <= 50 && wind >= 3) {
-    //     windchill = 35.74 +  0.6215 * temp - 35.75 * Math.pow(wind, 0.16) + 0.4275 * temp * Math.pow(wind, 0.16);
-    //     windchilldisplay = windchill.toFixed(0) + '&deg;'
-    // } else {
-    //     // document.querySelector("#winddiv").style.display="none";
-    //     windchilldisplay = tempdeg;
-    // }
-    
+    if(temp <= 50 && wind >= 3) {
+        windchill = 35.74 +  0.6215 * temp - 35.75 * Math.pow(wind, 0.16) + 0.4275 * temp * Math.pow(wind, 0.16);
+    } else {
+        // document.querySelector("#winddiv").style.display="none";
+        windchilldisplay = tempdeg;
+    }
+    */
+
     document.getElementById("curTemp").innerHTML = tempdeg;
     document.getElementById("windSpeed").innerHTML = windspeed;
     document.getElementById("humidity").innerHTML = humid;
     document.getElementById("windchill").innerHTML = windchilldisplay;
-
+    document.getElementById("conditions").innerHTML = conditions;
 });
 
 
