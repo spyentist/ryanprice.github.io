@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles\normalize.css">
+    <link rel="stylesheet" href="styles\small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles\large.css">
+    <link rel="icon" href="/week_11/images/weathericon.png">
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Lato|Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+    <title>Preston</title>
+</head>
+<body onload="doInputOutput()">
+    <header>
+        <img src="images/weathericon.png" alt="Price Network Icon" class="icon">
+        <h1>Price Network Weather</h1>
+        <h3>Get Serious. Get Price Network Weather.</h3>
+    </header>
+    <nav>
+        <ul class="navigation" id="navigation"> 
+            <li class="menu_icon"><a href="javascript:void(0);" onclick="adaptiveMenu()">&#9776; Menu</a></li>
+            <li class="links"><a href="/week_11/index.html">Home</a></li>
+            <li class="links"><a href="/week_11/preston.html">Preston</a></li>
+            <li class="links"><a href="/week_11/sodasprings.html">Soda Springs</a></li>
+            <li class="links"><a href="#" id="active">Fish Haven</a></li>
+            <li class="links"><a href="/week_11/stormcenter.html">Storm Center</a></li>
+            <li class="links"><a href="/week_11/gallery.html">Gallery</a></li>
+        </ul>
+
+    </nav>
+    <main>
+        <h1 class="site_title">Fish Haven</h1>
+        <div class="hero">
+            <!-- <img src="images/preston_hero.jpg" alt="hero image"> -->
+            <picture>
+                <source srcset="images/hero_image_small.jpg" media="(max-width: 32.5em)">
+                <source srcset="images/hero_image_medium.jpg" media="(max-width: 65em)">
+                <source srcset="images/hero_image_large.jpg" media="(min-width: 65.1em)">
+                <img src="images/placeholder.png" data-src="images/hero_image_small.jpg" alt="Hero Image"></picture>
+            <section class="summary">
+                <h3>Weather Summary</h3>
+                <div><span>Temperature: </span><span id="curTemp"></span></div>
+                <div><span>Wind Speed: </span><span id="windSpeed"></span></div>
+                <div><span>Humidity: </span><span id="humidity"></span></div>
+                <div id="winddiv"><span>Feels Like: </span><span id="windchill"></span></div>
+            </section>
+        </div>
+        <section class="fore_contain">
+            <table>
+                <thead>
+                    <tr>
+                        <td class="fore_heading" colspan="5">5-Day Forecast</td>
+                    </tr>
+                    <tr>
+                        <th id="day1"></th>
+                        <th id="day2"></th>
+                        <th id="day3"></th>
+                        <th id="day4"></th>
+                        <th id="day5"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="tempH1"></td>
+                        <td id="tempH2"></td>
+                        <td id="tempH3"></td>
+                        <td id="tempH4"></td>
+                        <td id="tempH5"></td>
+                    </tr>
+                    <tr>
+                        <td id="tempL1"></td>
+                        <td id="tempL2"></td>
+                        <td id="tempL3"></td>
+                        <td id="tempL4"></td>
+                        <td id="tempL5"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <br/>
+        <article class="town_article">
+            <h2>Article Title</h2>
+            <h4>by Super Star Author</h4>
+            <img src="images/preston_sanctuary.JPG" alt="Preston Birds Of Prey Sanctuary">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum autem minus, similique ad eveniet neque architecto dolorem! Soluta rem sit dicta totam atque? Sit quis aut earum vel neque nisi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum autem minus, similique ad eveniet neque architecto dolorem! Soluta rem sit dicta totam atque? Sit quis aut earum vel neque nisi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum autem minus, similique ad eveniet neque architecto dolorem! Soluta rem sit dicta totam atque? Sit quis aut earum vel neque nisi.</p>
+        </article>
+        <div class="contact">
+            <h2 class="service">Customer Service</h2>
+            <p class="service2">208-696-8661<br/>Monday - Friday<br/>9:00AM - 6:00PM MT</p>
+            <h2 class="email">Email Us!</h2>
+            <p class="email2"><a href="pri18032@byui.edu">pri18032@byui.edu</a></p>
+            <div class="iframediv">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11636.88926849076!2d-111.40486806280614!3d42.03803991735524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x875415e9bdab006f%3A0xc1864ed86dd2b0e4!2sFish%20Haven%2C%20ID%2083287!5e1!3m2!1sen!2sus!4v1583853367407!5m2!1sen!2sus" allowfullscreen=""></iframe>
+            </div>
+        </div>
+    </main>
+    <footer>
+        &copy; <span id="year"></span> &starf; Price Network Weather &starf; <span id="curdate"></span>
+    </footer>
+</body>
+    <script src="scripts/webfontloader.js"></script>
+    <script src="scripts/script - Copy.js"></script>
+</html>
+
