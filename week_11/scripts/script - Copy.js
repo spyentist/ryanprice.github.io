@@ -25,13 +25,15 @@ function doInputOutput() {
     }
 
     // Check to see if the forecast is in the document. (Working)
-    if (forecast != null) {
-        forecasting();
-    }
+//  if (forecast != null) {
+//        forecasting();
+//  }
+//  Calling the function from the webpage with a zipcode passed in instead.
 
-    if (summary != null) {
-        weatherConditions();
-    }
+//  if (summary != null) {
+//      weatherConditions();
+//  }
+//  Calling the function from the webpage with a zipcode passed in instead.
 
     
 }
@@ -46,9 +48,13 @@ function pancakes() {
 }
 
 // function to show the weekdays and their temps. (Working with JS variables)
-function forecasting() {
+function forecasting(zipCode) {
 
-    const apiURLF = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&APPID=d371a45960fcec8ac86717a7368063eb&units=imperial';
+    const apiURLF = 'https://api.openweathermap.org/data/2.5/forecast?zip=' + zipCode + '&APPID=d371a45960fcec8ac86717a7368063eb&units=imperial';
+    
+    
+    
+    
     fetch(apiURLF)
     .then((response) => response.json())
     .then((jsObject) => {
@@ -85,9 +91,9 @@ function forecasting() {
 }
 
 // function that does Hero image summary for current temps. (Working)
-function weatherConditions() {
+function weatherConditions(zipCode) {
     let temp, wind, humid, windchill, conditions;
-    const apiURLW = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&APPID=d371a45960fcec8ac86717a7368063eb&units=imperial';
+    const apiURLW = 'https://api.openweathermap.org/data/2.5/weather?zip='+zipCode+'&APPID=d371a45960fcec8ac86717a7368063eb&units=imperial';
 
 
     fetch(apiURLW)
