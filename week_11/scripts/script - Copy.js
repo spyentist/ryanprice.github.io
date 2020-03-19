@@ -51,10 +51,6 @@ function pancakes() {
 function forecasting(zipCode) {
 
     const apiURLF = 'https://api.openweathermap.org/data/2.5/forecast?zip=' + zipCode + '&APPID=d371a45960fcec8ac86717a7368063eb&units=imperial';
-    
-    
-    
-    
     fetch(apiURLF)
     .then((response) => response.json())
     .then((jsObject) => {
@@ -128,12 +124,36 @@ function weatherConditions(zipCode) {
     document.getElementById("windchill").innerHTML = windchilldisplay;
     document.getElementById("conditions").innerHTML = conditions;
 });
+}
+function getEvents(cityName) {
+    let i = 0;
+    fetch('https://byui-cit230.github.io/weather/data/towndata.json')
+        .then(result => {
+            return result.json();
+        })
+        .then(resultJSON => {
+            let towns = resultJSON.towns;
+            console.log(towns);
 
-
-
-
-
-
+            towns.forEach(
+                town => {
+                    if (town.name.toLowerCase() === cityName.toLowerCase()) {
+                        town.events.forEach(
+                            
+                            event => {
+                                // console.log(town.events)
+                                
+                                let li = document.createElement('li');
+                                li.textContent = town.events[i];
+                                document.getElementById('events').appendChild(li);
+                                i++;    
+                            }
+                            
+                        )
+                    }
+                }
+            );
+        });
 }
 
 
