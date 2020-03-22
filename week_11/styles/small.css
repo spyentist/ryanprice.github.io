@@ -179,6 +179,7 @@ ul {
     background-color: var(--accent1-color);
 }
 
+
 .service {
     position: absolute;
     top: 0px;
@@ -195,7 +196,7 @@ ul {
     background-color: lightgray;
     color:var(--text-color);
     padding: .5em;
-    margin-bottom: 2em;
+    margin-bottom: 5em;
 }
 
 .town_article img {
@@ -297,4 +298,8 @@ ul {
 #active {
     background-color: var(--link-color);
     color: lightgray;
+}
+
+#tempL1, #tempL2, #tempL3, #tempL4, #tempL5 {
+    width:50px;
 }

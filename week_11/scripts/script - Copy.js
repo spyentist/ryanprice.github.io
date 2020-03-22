@@ -72,11 +72,13 @@ function forecasting(zipCode) {
                     // Class note, to get min temp check documentation from OWM and find the hour that has the min temp then create an if statement for the low.
                     // insert low temp
                     // document.getElementById("tempL" + i).innerHTML = forecast.main.temp_min.toFixed(0) + "&deg;";
+                    let imgsrc = 'https://openweathermap.org/img/w/' + forecast.weather[0].icon + '.png';
+                    let imgalt = forecast.weather[0].icon + '.png';
 
+                    console.log(imgsrc + imgalt)
                     // Setting the variables for the image.
-                    document.getElementById("tempL" + i).setAttribute('src', 'https://openweathermap.org/img/w/' + forecast.weather[0].icon + '.png');
-                    document.getElementById("tempL" + i).setAttribute('alt', forecast.weather[0].icon + '.png');
-
+                    document.getElementById("tempL" + i).setAttribute('src', imgsrc);
+                    document.getElementById("tempL" + i).setAttribute('alt', imgalt);
 
                     //increase counter vairable
                     i++;
@@ -95,7 +97,7 @@ function weatherConditions(zipCode) {
     fetch(apiURLW)
         .then((response) => response.json())
         .then((jsObject) => {
-            console.log(jsObject);
+            // console.log(jsObject);
             
        
 
@@ -133,7 +135,7 @@ function getEvents(cityName) {
         })
         .then(resultJSON => {
             let towns = resultJSON.towns;
-            console.log(towns);
+            // console.log(towns);
 
             towns.forEach(
                 town => {
