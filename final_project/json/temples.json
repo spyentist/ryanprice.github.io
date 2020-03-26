@@ -1,0 +1,39 @@
+[
+    {
+        "Name": "Boise Idaho",
+        "StreetLine1": "",
+        "StreetLine2": "",
+        "City": "",
+        "State": "",
+        "Country": "",
+        "Zip": "",
+        "Telephone": "",
+        "Email": "",
+        "Services": [
+            "Clothing rental available",
+            "Cafeteria available",
+            ""
+        ],
+        "History": [
+            {
+                "Date": "",
+                "Milestone": ""
+            },
+            {
+                "Date": "",
+                "Milestone": ""
+            }
+        ],
+        "Schedule": {
+                "Initiatory": "Tuesday - Saturday",
+                "Endowment": "",
+                "Sealings": ""
+        },
+        "Closures": [
+            "",
+            "",
+            ""
+        ]
+        
+    }
+]
