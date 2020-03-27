@@ -1,0 +1,23 @@
+:root {
+    --primary-color: ;
+    --secondary-color: ;
+    --accent1-color: ;
+    --link-color: ;
+    --background-color: ;
+    --text-color: ;
+}
+
+
+/* HTML selectors */
+
+/* Class Selectors*/
+
+/* ID Selectors */
+
+#primary_color {
+    background-color: var(--primary-color);
+}
+
+#second_color {
+    background-color: var(--secondary-color);
+}
