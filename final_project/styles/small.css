@@ -1,9 +1,20 @@
+/*
 :root {
     --primary-color: #E85A4F;
     --secondary-color: #E98074;
     --accent1-color: #D8C3A5;
     --link-color: #838D8A;
     --background-color: #EAE7DC;
+    --text-color: ;
+}
+*/
+
+:root {
+    --primary-color: #D4CDC3;
+    --secondary-color: #A2A392;
+    --accent1-color: #9A998C;
+    --link-color: #AFBBF2;
+    --background-color: #FAF6F6;
     --text-color: ;
 }
 
@@ -16,7 +27,7 @@ font-family: 'Amatic SC', cursive;
 
 /* HTML selectors */
 a {
-    color: var(--text-color);
+    color: var(--link-color);
 }
 
 body {
@@ -24,7 +35,7 @@ body {
 }
 
 p, h1, h2, h3, h4, h5, h6 {
-    color: var(--primary-color);
+    color: var(--accent1-color);
 }
 
 table td {
@@ -68,6 +79,7 @@ div {
 
 #h1_1 {
     font-family: 'Gotu', sans-serif;
+    color: black;
 }
 
 #h1_2 {
