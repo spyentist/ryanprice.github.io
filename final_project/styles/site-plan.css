@@ -1,0 +1,96 @@
+:root {
+    --primary-color: #D4CDC3;
+    --secondary-color: #A2A392;
+    --accent1-color: #9A998C;
+    --link-color: #AFBBF2;
+    --background-color: #FAF6F6;
+}
+
+/*
+https://coolors.co/292e1e-7f0799-9649cb-afbbf2-faf6f6
+font-family: 'Gotu', sans-serif;
+font-family: 'Playfair Display', serif;
+*/
+
+/* HTML selectors */
+a {
+    color: var(--link-color);
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+main {
+    margin: 0 auto;
+    justify-content: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    background-color: var(--primary-color);
+    text-align:center;
+}
+
+table {
+    margin: 0 auto;
+}
+
+table td {
+    text-align: center;
+}
+
+img {
+    width: 75%;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    margin: 1.25em auto;
+}
+
+div {
+    justify-self: center;
+}
+
+p {
+    font-family: 'Gotu', sans-serif;
+    text-align: center;
+}
+
+
+/* Class Selectors*/
+
+/* ID Selectors */
+
+#primary_color {
+    background-color: var(--primary-color);
+    width:50px;
+    height: 50px;
+    
+}
+
+#second_color {
+    background-color: var(--secondary-color);
+    width:50px;
+    height: 50px;
+}
+
+#accent_color {
+    background-color: var(--accent1-color);
+    width:50px;
+    height: 50px;
+}
+
+#link_color {
+    background-color: var(--link-color);
+    width:50px;
+    height: 50px;
+}
+
+#h1_2 {
+    background-color: none;
+}
