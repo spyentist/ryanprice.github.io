@@ -1,0 +1,34 @@
+:root {
+    --primary-color: #D4CDC3;
+    --secondary-color: #A2A392;
+    --accent1-color: #9A998C;
+    --link-color: #AFBBF2;
+    --background-color: #FAF6F6;
+}
+
+/* HTML Selectors */
+
+
+
+h1, h2, h3, h4, h5, h6 {
+    background-color: var(--primary-color);
+}
+
+
+/* Class selectors */
+
+.hero {
+    background-image: url("/final_project/images/medium.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+    background-size: cover;
+}
+
+.navigation li {
+	display: none;
+}
+
+.responsive li {
+	display: block;
+}
