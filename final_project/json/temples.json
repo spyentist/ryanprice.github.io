@@ -39,163 +39,120 @@
                 }
             ],
             "Schedule": {
+                    "Baptistry": "",
                     "Initiatory": "Tuesday - Saturday, Walk-ins welcome",
                     "Endowment": "Tuesday - Saturday, Sessions are every 45 minutes starting at 6:30am",
                     "Sealings": "Tuesday - Saturday, Appointments preferred"
             },
             "Closures": [
-                "",
-                "",
-                ""
+                "Monday, March 16, 2020 - Monday, May 4, 2020",
+                "Saturday, July 4, 2020",
+                "Saturday Oct. 3 2020",
+                "Monday, Oct. 12, 2020 - Monday, Oct. 26, 2020",
+                "Wednesday, Nov. 25, 2020",
+                "Thursday, Nov. 26, 2020",
+                "Thursday, Dec. 24, 2020",
+                "Friday, Dec. 25, 2020",
+                "Thursday, Dec. 31, 2020"
             ],
             "Photo": "boise.jpg"
             
         },
         {
             "Name": "San Antonio",
-            "StreetLine1": "",
+            "StreetLine1": "20080 Stone Oak Pkwy",
             "StreetLine2": "",
-            "City": "",
-            "State": "",
-            "Country": "",
-            "Zip": "",
-            "Telephone": "",
-            "Email": "-OFF@ChurchofJesusChrist.org",
+            "City": "San Antonio",
+            "State": "TX",
+            "Country": "United States",
+            "Zip": "78258-6920",
+            "Telephone": "(1) 210-538-0034",
+            "Email": "SANTO-OFF@ChurchofJesusChrist.org",
             "Services": [
-                "",
-                ""
+                "No clothing rental available",
+                "No cafeteria available",
+                "No patron housing available",
+                "Distribution center nearby"
             ],
             "History": [
                 {
-                    "Date": "",
-                    "Milestone": ""
+                    "Date": "June 24, 2001",
+                    "Milestone": "Announced"
                 },
                 {
-                    "Date": "",
-                    "Milestone": ""
+                    "Date": "March 29, 2003",
+                    "Milestone": "Groundbreaking"
                 },
                 {
-                    "Date": "",
-                    "Milestone": ""
-                },
-                {
-                    "Date": "",
-                    "Milestone": ""
-                },
-                {
-                    "Date": "",
-                    "Milestone": ""
+                    "Date": "May 22 2005",
+                    "Milestone": "Dedication"
                 }
             ],
             "Schedule": {
-                    "Initiatory": "",
-                    "Endowment": "",
-                    "Sealings": ""
+                    "Baptistry": "Tuesday - Saturday 9:00 am - 12:00 pm Call for appts",
+                    "Initiatory": "Call for more information",
+                    "Endowment": "9:00 am, 10:30 am, 3:00 pm, 4:30 pm, 6:30 pm, 8:00 pm",
+                    "Sealings": "Call for more information"
             },
             "Closures": [
-                "",
-                "",
-                ""
+                "Tuesday, Mar. 24, 2020 - Thursday, April 30, 2020",
+                "Friday, July 3, 2020",
+                "Saturday, July 4, 2020",
+                "Saturday Oct. 3 2020",
+                "Monday, Oct. 5 2020 - Monday, Oct. 26, 2020",
+                "Wednesday, Nov. 25, 2020",
+                "Thursday, Nov. 26, 2020",
+                "Thursday, Dec. 24, 2020",
+                "Friday, Dec. 25, 2020",
+                "Thursday, Dec. 31, 2020"
             ],
-            "Photo": ""
+            "Photo": "san_antonio.jpg"
             
         },
         {
-            "Name": "",
-            "StreetLine1": "",
-            "StreetLine2": "",
-            "City": "",
+            "Name": "Guayaquil Ecuador",
+            "StreetLine1": "6ta y Av. Rodrigo Chavez",
+            "StreetLine2": "Principado de las Lomas",
+            "City": "Urdesa Notre - Guayquil",
             "State": "",
-            "Country": "",
+            "Country": "Ecuador",
             "Zip": "",
-            "Telephone": "",
+            "Telephone": "(593) 4-371-8100",
             "Email": "-OFF@ChurchofJesusChrist.org",
             "Services": [
-                "",
-                ""
+                "Clothing rental available",
+                "Cafeteria available",
+                "Patron housing available",
+                "Distribution center available"
             ],
             "History": [
                 {
-                    "Date": "",
-                    "Milestone": ""
+                    "Date": "March 31, 1982",
+                    "Milestone": "Announced"
                 },
                 {
-                    "Date": "",
-                    "Milestone": ""
+                    "Date": "August 10, 1996",
+                    "Milestone": "Groundbreaking"
                 },
                 {
-                    "Date": "",
-                    "Milestone": ""
-                },
-                {
-                    "Date": "",
-                    "Milestone": ""
-                },
-                {
-                    "Date": "",
-                    "Milestone": ""
+                    "Date": "August 1, 1999",
+                    "Milestone": "Dedication"
                 }
             ],
             "Schedule": {
-                    "Initiatory": "",
-                    "Endowment": "",
-                    "Sealings": ""
+                    "Baptistry": "7:30 am - 12:00 pm, 5:00 pm - 9:30 pm Appts preferred",
+                    "Initiatory": "Call for more information",
+                    "Endowment": "8:00 am, 9:00 am, 10:00 am, 6:00 pm, 6:45 pm, 7:30 pm",
+                    "Sealings": "Call for more information"
             },
             "Closures": [
-                "",
-                "",
-                ""
+                "Saturday,March 16, 2020 - Saturday, April 30, 2020",
+                "Monday Sept. 14, 2020 - Monday, September 28, 2020",
+                "Saturday, Oct. 3 2020",
+                "Thursday, Dec. 24, 2020",
+                "Friday, Dec. 25, 2020"
             ],
-            "Photo": ""
-            
-        },
-        {
-            "Name": "",
-            "StreetLine1": "",
-            "StreetLine2": "",
-            "City": "",
-            "State": "",
-            "Country": "",
-            "Zip": "",
-            "Telephone": "",
-            "Email": "-OFF@ChurchofJesusChrist.org",
-            "Services": [
-                "",
-                ""
-            ],
-            "History": [
-                {
-                    "Date": "",
-                    "Milestone": ""
-                },
-                {
-                    "Date": "",
-                    "Milestone": ""
-                },
-                {
-                    "Date": "",
-                    "Milestone": ""
-                },
-                {
-                    "Date": "",
-                    "Milestone": ""
-                },
-                {
-                    "Date": "",
-                    "Milestone": ""
-                }
-            ],
-            "Schedule": {
-                    "Initiatory": "",
-                    "Endowment": "",
-                    "Sealings": ""
-            },
-            "Closures": [
-                "",
-                "",
-                ""
-            ],
-            "Photo": ""
+            "Photo": "guayaquil.jpg"
             
         }
 ]
