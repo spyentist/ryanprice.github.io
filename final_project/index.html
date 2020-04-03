@@ -5,24 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Temple Inn & Suites Home</title>
     <link rel="stylesheet" href="/final_project/styles/small.css">
+    <link rel="stylesheet" href="/final_project/styles/medium.css">
 </head>
-<body>
+<body onload="getTemples()">
     <header>
-        <img src="" alt="Temple Inn & Suites Logo">
-        <h1>Temple Inn & Suites</h1>
+        <img src="images/TIS_Logo.png" alt="Temple Inn & Suites Logo" class="logo">
+        <nav>
+            <ul class="navigation" id="navigation">
+                <li class="menu_icon"><a href="javascript:void(0);" onclick="adaptiveMenu()">&#9776;</a></li>
+                <li class="links"><a href="../">Home</a></li>
+                <li class="links"><a href="/final_project/">Site 1</a></li>
+                <li class="links"><a href="/final_project/">Site 2</a></li>
+                <li class="links"><a href="/final_project/">Site 3</a></li>
+                <li class="links"><a href="/final_project/">Site 4</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <ul>
-            <li class="menu_icon"><a href="javascript:void(0);" onclick="adaptiveMenu()">&#9776; Menu</a></li>
-            <li><a href="../">Home</a></li>
-            <li><a href="/final_project/">Site 1</a></li>
-            <li><a href="/final_project/">Site 2</a></li>
-            <li><a href="/final_project/">Site 3</a></li>
-            <li><a href="/final_project/">Site 4</a></li>
-        </ul>
-    </nav>
     <main>
         <section class="hero"></section>
+        
+        <section id="templesummary"></section>
 
 
     </main>

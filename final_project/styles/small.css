@@ -8,27 +8,86 @@
 
 /* HTML Selectors */
 
+a {
+    color: var(--link-color);
+}
+
+article {
+    margin: .5em 0 .5em 0;
+}
+
+body {
+    background-color: var(--background-color);
+}
 
 
 h1, h2, h3, h4, h5, h6 {
     background-color: var(--primary-color);
 }
 
+img {
+    width: 90%;
+}
+
+nav ul {
+    text-align: center;
+    list-style: none;
+    padding: 0;
+}
+
 
 /* Class selectors */
 
+.temple_card {
+    background-color: var(--primary-color);
+}
+
 .hero {
-    background-image: url("/final_project/images/medium.jpg");
+    background-image: url("/final_project/images/Mlarge.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    height: 400px;
+    height: 250px;
     background-size: cover;
 }
 
+.logo {
+    /* position: relative; */
+    /* top: ; */
+    width: 45%;
+}
+
+.links a, .menu_icon a {
+    display:block;
+    width:100%;
+    padding: .5em 0 .5em 0;
+}
+
+.navigation {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
 .navigation li {
-	display: none;
+    display: none;
+}
+
+.responsive {
+    display: flex;
+    list-style: none;
+    justify-content: center;
 }
 
 .responsive li {
-	display: block;
+    display: block;
 }
+
+/* ID selectors */
+#templesummary {
+    max-width: 100%;
+}
+
