@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/final_project/styles/small.css">
     <link rel="stylesheet" href="/final_project/styles/medium.css">
 </head>
-<body onload="getTemples()">
+<body onload="doInputOutput('home')">
     <header>
         <img src="images/TIS_Logo.png" alt="Temple Inn & Suites Logo" class="logo">
         <nav>
@@ -22,9 +22,17 @@
         </nav>
     </header>
     <main>
-        <section class="hero"></section>
+        <section class="hero">
+            <h2>"CATCHPHRASE HERE" in/at/of Meridian, Idaho.</h2>
+            <button type="button">"RESERVE HERE/CHECK IT OUT NOW/Other option"</button>
+        </section>
+        <section class="main_grid">
         <section id="templesummary"></section>
+        </section>
     </main>
+    <footer>
+        &copy; <span id="year"></span> &starf; Temple Inn & Suites &starf; <span id="curdate"></span>
+    </footer>
     <script src="scripts/main.js"></script>
 </body>
 </html>
