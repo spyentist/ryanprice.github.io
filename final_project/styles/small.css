@@ -21,10 +21,23 @@ body {
     background-color: var(--background-color);
 }
 
+button {
+    font-size: 1.1em;
+    border-radius: 8px;
+    background-color: var(--primary-color);
+    margin-left: 1em;
+}
+
 header {
     background-color: var(--accent1-color);
     display: grid;
     grid-template-columns: .85fr 1.15fr;
+}
+
+iframe {
+    width: 100%;
+    border: none;
+    margin: 0 auto;
 }
 
 img {
@@ -50,6 +63,13 @@ footer {
 
 /* Class selectors */
 
+.call {
+    background-color: var(--primary-color);
+    opacity: .7;
+    width: 40%;
+    padding-left: 1em;
+}
+
 .temple_card {
     background-color: var(--primary-color);
     text-align: center;
@@ -59,9 +79,9 @@ footer {
     background-image: url("/final_project/images/Mlarge.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    height: 250px;
     background-size: cover;
-}
+    height: 250px;
+} 
 
 .links a, .menu_icon a {
     display:block;
@@ -111,4 +131,8 @@ footer {
 
 #active {
     background-color: var(--primary-color);
+}
+
+#response {
+    text-align: center;
 }

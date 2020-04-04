@@ -1,5 +1,9 @@
 @media only screen and (min-width: 32.5em) {
 
+a {
+    font-size: 1em;
+}
+
 
 article:nth-child(1) {
     grid-column: 1/3;
@@ -16,6 +20,10 @@ article:nth-child(3) {
     grid-row: 2/3;
 }
 
+button {
+    margin-left: 2em;
+}
+
 nav ul li a{
     padding: .5em .75em;
 }
@@ -27,7 +35,13 @@ nav ul li a{
     row-gap: .5em;
 }
 
+.call {
+    font-size: 1.5em;
+}
 
+.call h2 {
+    margin-top: .5em;
+}
 
 .hero {
     height: 500px;
