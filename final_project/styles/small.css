@@ -119,6 +119,10 @@ textarea {
     margin-bottom: 1em;
 }
 
+.icon {
+    width: 45px;
+}
+
 .links a, .menu_icon a {
     display:block;
     width:100%;

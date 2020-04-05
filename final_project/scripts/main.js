@@ -95,7 +95,6 @@ function buildFull(temple) {
     let card = document.createElement('article');
     let info = document.createElement('section');
     let address = document.createElement('section');
-    let weather = document.createElement('section');
     let ordinances = document.createElement('section');
     let h1 = document.createElement('h1');
     let infoh3 = document.createElement("h3");
@@ -178,6 +177,7 @@ function buildFull(temple) {
     closure7.textContent = temple.Closures[6];
     closure8.textContent = temple.Closures[7];
     closure9.textContent = temple.Closures[8];
+    closure10.textContent = temple.Closures[9];
 
 
         // assigning html position
@@ -223,7 +223,7 @@ function buildFull(temple) {
         closing.appendChild(closure7);
         closing.appendChild(closure8);
         closing.appendChild(closure9);
-        
+        closing.appendChild(closure10);
 
 
         // Setting attributes for styling
@@ -239,9 +239,8 @@ function buildFull(temple) {
             schedules.setAttribute('class', 'bold');
         closing.setAttribute('class', 'closing');
             closures.setAttribute('class', 'bold');
-        weather.setAttribute('class', 'weather');
     
-
+        weatherConditions(temple);
     
         // Adding all the cards to the webpage
     document.querySelector('#templefull').appendChild(card);
@@ -263,4 +262,54 @@ let display = weekDay + ", " + dayNum + " " + month + " " + year;
 
 }
 
+function weatherConditions(temple) {
+    let temp, wind, humid, conditions;
+    const apiURLW = 'https://api.openweathermap.org/data/2.5/weather?id='+temple.ID+'&APPID=d371a45960fcec8ac86717a7368063eb&units=imperial';
 
+
+    fetch(apiURLW)
+        .then((response) => response.json())
+        .then((jsObject) => {
+            // console.log(jsObject);
+            let cardvar = temple.Photo + "_card"
+            let card = document.getElementById(cardvar);
+            let weather = document.createElement('section');
+            let weathercap = document.createElement('h3');
+            let degrees = document.createElement('p');
+            let windspeed = document.createElement('p');
+            let humidity = document.createElement('p');
+            let condition = document.createElement('p');
+            let img = document.createElement('img');
+
+
+
+
+            temp = jsObject.main.temp.toFixed(0);
+            wind = jsObject.wind.speed.toFixed(0);
+            humid = jsObject.main.humidity;
+            // windchilldisplay = jsObject.main.feels_like.toFixed(0) + "&deg;";
+            conditions = jsObject.weather[0].main;
+            let imgsrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png';
+            let imgalt = jsObject.weather[0].icon + '.png';
+
+
+            degrees.textContent = "Temperature: " + temp  + "°";
+            windspeed.textcontent = "Windspeed: " + wind  + " mph";
+            humidity.textContent = "Humidity: " + humid + "%";
+            condition.textContent = "Conditions: " + conditions;
+            weathercap.textContent = "Current Weather";
+
+            card.appendChild(weathercap);
+            card.appendChild(weather);
+                weather.appendChild(degrees);
+                weather.appendChild(windspeed);
+                weather.appendChild(humidity);
+                weather.appendChild(condition);
+                weather.appendChild(img);
+                    img.setAttribute('src', imgsrc);
+                    img.setAttribute('alt', imgalt);
+                    img.setAttribute('class', 'icon');
+
+                    weather.setAttribute('class', 'weather');
+        });
+}

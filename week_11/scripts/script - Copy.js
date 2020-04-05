@@ -91,7 +91,7 @@ function forecasting(id) {
 // function that does Hero image summary for current temps. (Working)
 function weatherConditions(id) {
     let temp, wind, humid, windchill, conditions;
-    const apiURLW = 'https://api.openweathermap.org/data/2.5/weather?zip='+id+'&APPID=d371a45960fcec8ac86717a7368063eb&units=imperial';
+    const apiURLW = 'https://api.openweathermap.org/data/2.5/weather?id='+id+'&APPID=d371a45960fcec8ac86717a7368063eb&units=imperial';
 
 
     fetch(apiURLW)
