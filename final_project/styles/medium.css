@@ -54,6 +54,10 @@ nav ul li a{
     padding: .5em .75em;
 }
 
+ul {
+    list-style: none;
+}
+
 #templesummary {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -67,6 +71,15 @@ nav ul li a{
     column-gap: 1em;
     row-gap: .5em;
 }
+
+.amenities {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    padding: 0;
+    column-gap: 1em;
+}
+
 
 .address_contact {
     display: grid;
