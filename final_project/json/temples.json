@@ -19,23 +19,23 @@
             "History": [
                 {
                     "Date": "31 March 1982",
-                    "Milestone": "Announced"
+                    "Milestone": "Announced: "
                 },
                 {
                     "Date": "18 December 1982",
-                    "Milestone": "Groundbreaking"
+                    "Milestone": "Groundbreaking: "
                 },
                 {
                     "Date": "25 May 1984",
-                    "Milestone": "Dedicated"
+                    "Milestone": "Dedication: "
                 },
                 {
                     "Date": "29 May 1987",
-                    "Milestone": "Rededicated"
+                    "Milestone": "Rededicated: "
                 },
                 {
                     "Date": "18 November 2012",
-                    "Milestone": "Rededicated"
+                    "Milestone": "Rededicated: "
                 }
             ],
             "Schedule": {
@@ -77,15 +77,23 @@
             "History": [
                 {
                     "Date": "June 24, 2001",
-                    "Milestone": "Announced"
+                    "Milestone": "Announced: "
                 },
                 {
                     "Date": "March 29, 2003",
-                    "Milestone": "Groundbreaking"
+                    "Milestone": "Groundbreaking: "
                 },
                 {
                     "Date": "May 22 2005",
-                    "Milestone": "Dedication"
+                    "Milestone": "Dedication: "
+                },
+                {
+                    "Date": "",
+                    "Milestone": ""
+                },
+                {
+                    "Date": "",
+                    "Milestone": ""
                 }
             ],
             "Schedule": {
@@ -128,15 +136,23 @@
             "History": [
                 {
                     "Date": "March 31, 1982",
-                    "Milestone": "Announced"
+                    "Milestone": "Announced: "
                 },
                 {
                     "Date": "August 10, 1996",
-                    "Milestone": "Groundbreaking"
+                    "Milestone": "Groundbreaking: "
                 },
                 {
                     "Date": "August 1, 1999",
-                    "Milestone": "Dedication"
+                    "Milestone": "Dedication: "
+                },
+                {
+                    "Date": "",
+                    "Milestone": ""
+                },
+                {
+                    "Date": "",
+                    "Milestone": ""
                 }
             ],
             "Schedule": {
@@ -174,15 +190,23 @@
             "History": [
                 {
                     "Date": "April 2, 2011",
-                    "Milestone": "Announced"
+                    "Milestone": "Announced: "
                 },
                 {
                     "Date": "August 23, 2014",
-                    "Milestone": "Groundbreaking"
+                    "Milestone": "Groundbreaking: "
                 },
                 {
                     "Date": "November 19, 2017",
-                    "Milestone": "Dedication"
+                    "Milestone": "Dedication: "
+                },
+                {
+                    "Date": "",
+                    "Milestone": ""
+                },
+                {
+                    "Date": "",
+                    "Milestone": ""
                 }
             ],
             "Schedule": {
