@@ -1,15 +1,20 @@
 function doInputOutput (page) {
     switch (page) {
         case 'home':
-            getTemples();
+            getTempleSummary();
             footer();
             break;
         case 'contact':
             footer();
+            break;
+        case 'temples':
+            getTempleFull();
+            footer();
+            break;
     } 
 }
 
-function getTemples() {
+function getTempleSummary() {
     
     fetch('json/temples.json')
         .then(response => response.json())
@@ -36,6 +41,23 @@ function adaptiveMenu() {
 }
 
 
+function getTempleFull() {
+    
+    fetch('json/temples.json')
+        .then(response => response.json())
+        .then(
+            temples => {
+                console.log(temples);
+                temples.forEach(
+                    temple2 => {
+                        buildFull(temple2);
+                    }   
+                );
+            }
+        );
+}
+
+
  function buildSummary(temple) {
 
     let card = document.createElement('article');
@@ -46,7 +68,7 @@ function adaptiveMenu() {
     let image = document.createElement('img');
 
     h1.textContent = temple.Name + " Temple";
-    p.textContent =  temple.History[0].Milestone + ": " + temple.History[1].Date;
+    p.textContent =  temple.History[0].Milestone + ": " + temple.History[0].Date;
     p2.textContent = temple.History[2].Milestone + ": " + temple.History[2].Date;
     // p3.textContent = '' + temples. + '"';
     image.setAttribute('src', "images/" + temple.Photo);
@@ -63,6 +85,41 @@ function adaptiveMenu() {
     card.setAttribute('class', 'temple_card');
 
     document.querySelector('#templesummary').appendChild(card);
+}
+
+
+function buildFull(temple) {
+
+    let card = document.createElement('article');
+    let subcard = document.createElement('section');
+    let h1 = document.createElement('h1');
+    let announce = document.createElement('p');
+    let dedicated = document.createElement('p');
+    let stradd1 = document.createElement('p');
+    let stradd2 = document.createElement('p');
+    let country = document.createElement('p');
+    let image = document.createElement('img');
+    let br = document.createElement('br');
+
+    h1.textContent = temple.Name + " Temple";
+    announce.textContent =  temple.History[0].Milestone + ": " + temple.History[0].Date;
+    dedicated.textContent = temple.History[2].Milestone + ": " + temple.History[2].Date;
+    country.textContent =  temple.Country;
+    image.setAttribute('src', "images/" + temple.Photo);
+    image.setAttribute('alt', temple.Name + " Photo");
+
+
+    card.appendChild(h1);
+    card.appendChild(image);
+    card.appendChild(announce);
+    card.appendChild(dedicated);
+    // card.appendChild(br);
+    card.appendChild(country);
+
+    card.setAttribute('class', 'temple_card');
+    card.setAttribute('id', temple.Photo + "_card");
+
+    document.querySelector('#templefull').appendChild(card);
 }
 
 function footer() {

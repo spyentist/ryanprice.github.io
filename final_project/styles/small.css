@@ -28,6 +28,10 @@ button {
     margin-left: 1em;
 }
 
+form {
+    margin-bottom: 2em;
+}
+
 header {
     background-color: var(--accent1-color);
     display: grid;
@@ -37,11 +41,22 @@ header {
 iframe {
     width: 100%;
     border: none;
-    margin: 0 auto;
 }
 
 img {
     width: 90%;
+}
+
+input {
+    width: 100%;
+}
+
+label {
+    margin: .5em 0 .5em 0;
+}
+
+main h2 {
+    text-align:center;
 }
 
 nav ul {
@@ -60,14 +75,30 @@ footer {
     padding: .5em 0;
 }
 
+textarea {
+    width:100%;
+    height: 4em;
+}
+
 
 /* Class selectors */
+
+.address {
+    width:100%;
+    text-align: center;
+}
 
 .call {
     background-color: var(--primary-color);
     opacity: .7;
     width: 40%;
     padding-left: 1em;
+}
+
+.contact_form {
+    text-align: left;
+    width: 85%;
+    margin: 0 auto;
 }
 
 .temple_card {
@@ -81,7 +112,8 @@ footer {
     background-position: center;
     background-size: cover;
     height: 250px;
-} 
+    margin-bottom: 1em;
+}
 
 .links a, .menu_icon a {
     display:block;
@@ -122,6 +154,10 @@ footer {
 
 .responsive li {
     display: block;
+}
+
+#submit {
+    width: 20%;
 }
 
 /* ID selectors */

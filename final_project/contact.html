@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Temple Inn & Suites | Contact Us</title>
+    <link rel="stylesheet" href="/final_project/styles/normalize.css">
     <link rel="stylesheet" href="/final_project/styles/small.css">
     <link rel="stylesheet" href="/final_project/styles/medium.css">
+    <link rel="stylesheet" href="/final_project/styles/large.css">
 </head>
 <body onload="doInputOutput('contact')">
     <header>
@@ -13,7 +15,7 @@
         <nav>
             <ul class="navigation" id="navigation">
                 <li class="menu_icon"><a href="javascript:void(0);" onclick="adaptiveMenu()">&#9776;</a></li>
-                <li class="links"><a href="../">Home</a></li>
+                <li class="links"><a href="/final_project/">Home</a></li>
                 <li class="links"><a href="/final_project/">Temples</a></li>
                 <li class="links"><a href="/final_project/">Reservtions</a></li>
                 <li class="links"><a href="/final_project/">Services</a></li>
@@ -22,31 +24,36 @@
         </nav>
     </header>
     <main>
-        <section class="c_hero">
-            <h2>Contact Us</h2>
-
-            
+        <h2>Contact Us</h2>
+        <section class="hero">
         </section>
         <section class="contact_form">
             <form action="thankyou.html" method="GET">
                 <div>
                     <label for="fullName">Full Name: *</label>
+                    <br>
                     <input type="text" id="fullName" required>
                 </div>
                 <div>
                     <label for="email">Email:</label>
+                    <br>
                     <input type="email" id="email" placeholder="johndoe@domain.com">
                 </div>
                 <div>
                     <label for="info">Comments:</label>
+                    <br>
                     <textarea type="textarea" id="aInfo"></textarea>
             </div>
             <div>
-                <input type="submit" value="Submit" src="/thankyou.html">
+                <input type="submit" value="Submit" src="/thankyou.html" id="submit">
             </div>
             </form>
         </section>
-        <section>
+        <section class="address">
+            <section>
+                <h3>Mailing address:</h3>
+                <p>Temple Inn & Suites <br>4800 Montgomery Ln #300, <br>Bethesda, MD 20814</p>
+            </section>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.404837028569!2d-77.09772048415014!3d38.983255949482896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0x9c8eb1c5547b83eb!2s4800%20Montgomery%20Ln%20%23300%2C%20Bethesda%2C%20MD%2020814!5e0!3m2!1sen!2sus!4v1585986522024!5m2!1sen!2sus" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </section>
     </main>

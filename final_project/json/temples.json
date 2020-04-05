@@ -146,8 +146,8 @@
                     "Sealings": "Call for more information"
             },
             "Closures": [
-                "Saturday,March 16, 2020 - Saturday, April 30, 2020",
-                "Monday Sept. 14, 2020 - Monday, September 28, 2020",
+                "Saturday, March 16, 2020 - Saturday, April 30, 2020",
+                "Monday, Sept. 14, 2020 - Monday, September 28, 2020",
                 "Saturday, Oct. 3 2020",
                 "Thursday, Dec. 24, 2020",
                 "Friday, Dec. 25, 2020"
@@ -156,49 +156,52 @@
             
         },
         {
-            "Name": "",
-            "StreetLine1": "",
+            "Name": "Meridian Idaho",
+            "StreetLine1": "7355 N Linder Rd",
             "StreetLine2": "",
-            "City": "",
-            "State": "",
-            "Country": "",
-            "Zip": "",
-            "Telephone": "",
-            "Email": "-OFF@ChurchofJesusChrist.org",
+            "City": "Meridian",
+            "State": "Idaho",
+            "Country": "United States",
+            "Zip": "83646",
+            "Telephone": "(1) 208-957-7300",
+            "Email": "MIDAH-OFF@ChurchofJesusChrist.org",
             "Services": [
-                "Clothing rental available",
-                "Cafeteria available",
-                "Patron housing available",
-                "Distribution center available"
+                "No clothing rental available",
+                "No cafeteria available",
+                "No patron housing available",
+                "No distribution center"
             ],
             "History": [
                 {
-                    "Date": "March 31, 1982",
+                    "Date": "April 2, 2011",
                     "Milestone": "Announced"
                 },
                 {
-                    "Date": "August 10, 1996",
+                    "Date": "August 23, 2014",
                     "Milestone": "Groundbreaking"
                 },
                 {
-                    "Date": "August 1, 1999",
+                    "Date": "November 19, 2017",
                     "Milestone": "Dedication"
                 }
             ],
             "Schedule": {
-                    "Baptistry": "7:30 am - 12:00 pm, 5:00 pm - 9:30 pm Appts preferred",
+                    "Baptistry": "5:00 am - 4:30 pm No appts needed, 4:30 pm - 9:00 pm Appts preferred",
                     "Initiatory": "Call for more information",
-                    "Endowment": "8:00 am, 9:00 am, 10:00 am, 6:00 pm, 6:45 pm, 7:30 pm",
+                    "Endowment": "Every 45 minutes from 5:15 am - 7:30 pm",
                     "Sealings": "Call for more information"
             },
             "Closures": [
-                "Saturday,March 16, 2020 - Saturday, April 30, 2020",
-                "Monday Sept. 14, 2020 - Monday, September 28, 2020",
-                "Saturday, Oct. 3 2020",
+                "Saturday, March 26, 2020 - Saturday, April 30, 2020",
+                "Monday, May 4, 2020 - Monday June 15, 2020",
+                "Saturday, July 4, 2020",
+                "Saturday, Oct. 3, 2020",
+                "Wednesday Nov. 2, - Monday, Nov. 16, 2020",
                 "Thursday, Dec. 24, 2020",
-                "Friday, Dec. 25, 2020"
+                "Friday, Dec. 25, 2020",
+                "Thursday, Dec. 31, 2020 - Jan. 1, 2021"
             ],
-            "Photo": "boise.jpg"
+            "Photo": "meridian.jpg"
             
         }
 ]

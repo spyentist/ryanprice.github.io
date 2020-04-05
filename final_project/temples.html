@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Temple Inn & Suites Home</title>
+    <link rel="stylesheet" href="/final_project/styles/normalize.css">
     <link rel="stylesheet" href="/final_project/styles/small.css">
     <link rel="stylesheet" href="/final_project/styles/medium.css">
+    <link rel="stylesheet" href="/final_project/styles/large.css">
 </head>
-<body onload="doInputOutput('home')">
+<body onload="doInputOutput('temples')">
     <header>
         <img src="images/TIS_Logo.png" alt="Temple Inn & Suites Logo" class="logo">
         <nav>
             <ul class="navigation" id="navigation">
                 <li class="menu_icon"><a href="javascript:void(0);" onclick="adaptiveMenu()">&#9776;</a></li>
-                <li class="links"><a href="../" id="active">Home</a></li>
-                <li class="links"><a href="/final_project/">Temples</a></li>
+                <li class="links"><a href="/final_project/">Home</a></li>
+                <li class="links"><a href="#" id="active">Temples</a></li>
                 <li class="links"><a href="/final_project/">Reservtions</a></li>
                 <li class="links"><a href="/final_project/">Services</a></li>
                 <li class="links"><a href="/final_project/">Contact Us</a></li>
@@ -22,9 +24,11 @@
         </nav>
     </header>
     <main>
-        <section class="t_hero">
-            <h2>Temples</h2>
+        <h2>Temples</h2>
+        <section class="hero">
+            
         </section>  
+        <section id="templefull"></section>
     </main>
     <footer>
         &copy; <span id="year"></span> &starf; Temple Inn & Suites &starf; <span id="curdate"></span>
