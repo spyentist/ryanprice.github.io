@@ -96,6 +96,7 @@ function buildFull(temple) {
     let info = document.createElement('section');
     let address = document.createElement('section');
     let weather = document.createElement('section');
+    let ordinances = document.createElement('section');
     let h1 = document.createElement('h1');
     let infoh3 = document.createElement("h3");
     let announce = document.createElement('p');
@@ -119,9 +120,23 @@ function buildFull(temple) {
     let service2 = document.createElement('p');
     let service3 = document.createElement('p');
     let service4 = document.createElement('p');
-
-
-
+    let schedules = document.createElement('p');
+    let schedule1 = document.createElement('p');
+    let schedule2 = document.createElement('p');
+    let schedule3 = document.createElement('p');
+    let schedule4 = document.createElement('p');
+    let closing = document.createElement('section');
+    let closures = document.createElement('p');
+    let closure1 = document.createElement('p');
+    let closure2 = document.createElement('p');
+    let closure3 = document.createElement('p');
+    let closure4 = document.createElement('p');
+    let closure5 = document.createElement('p');
+    let closure6 = document.createElement('p');
+    let closure7 = document.createElement('p');
+    let closure8 = document.createElement('p');
+    let closure9 = document.createElement('p');
+    let closure10 = document.createElement('p');
 
 
     h1.textContent = temple.Name + " Temple";
@@ -141,13 +156,28 @@ function buildFull(temple) {
     infoh3.textContent = 'History';
     addressh3.textContent = 'Information';
     addressp.textContent = "Address:";
-    addressphn.textContent = "Phone number:"
-    addresseml.textContent = "Email: "
-    services.textContent = 'Services: '
+    addressphn.textContent = "Phone number:";
+    addresseml.textContent = "Email:";
+    services.textContent = 'Services:';
     service1.textContent = temple.Services[0];
     service2.textContent = temple.Services[1];
     service3.textContent = temple.Services[2];
     service4.textContent = temple.Services[3];
+    schedules.textContent = 'Ordinance schedule: ';
+    schedule1.textContent = 'Baptistry: ' + temple.Schedule.Baptistry;
+    schedule2.textContent = 'Initiatory: ' + temple.Schedule.Initiatory;
+    schedule3.textContent = 'Endowment: ' + temple.Schedule.Endowment;
+    schedule4.textContent = 'Sealing: ' + temple.Schedule.Sealings;
+    closures.textContent = 'Closures:';
+    closure1.textContent = temple.Closures[0];
+    closure2.textContent = temple.Closures[1];
+    closure3.textContent = temple.Closures[2];
+    closure4.textContent = temple.Closures[3];
+    closure5.textContent = temple.Closures[4];
+    closure6.textContent = temple.Closures[5];
+    closure7.textContent = temple.Closures[6];
+    closure8.textContent = temple.Closures[7];
+    closure9.textContent = temple.Closures[8];
 
 
         // assigning html position
@@ -171,11 +201,29 @@ function buildFull(temple) {
         address.appendChild(phonenum);
         address.appendChild(addresseml);
         address.appendChild(email);
-        address.appendChild(services);
-        address.appendChild(service1);
-        address.appendChild(service2);
-        address.appendChild(service3);
-        address.appendChild(service4);
+    card.appendChild(ordinances);
+        ordinances.appendChild(services);
+        ordinances.appendChild(service1);
+        ordinances.appendChild(service2);
+        ordinances.appendChild(service3);
+        ordinances.appendChild(service4);
+        ordinances.appendChild(schedules);
+        ordinances.appendChild(schedule1);
+        ordinances.appendChild(schedule2);
+        ordinances.appendChild(schedule3);
+        ordinances.appendChild(schedule4);
+    card.appendChild(closing);
+        closing.appendChild(closures);
+        closing.appendChild(closure1);
+        closing.appendChild(closure2);
+        closing.appendChild(closure3);
+        closing.appendChild(closure4);
+        closing.appendChild(closure5);
+        closing.appendChild(closure6);
+        closing.appendChild(closure7);
+        closing.appendChild(closure8);
+        closing.appendChild(closure9);
+        
 
 
         // Setting attributes for styling
@@ -186,7 +234,11 @@ function buildFull(temple) {
             addresseml.setAttribute('class', 'bold');
             addressphn.setAttribute('class', 'bold');
             addressp.setAttribute('class', 'bold');
+        ordinances.setAttribute('class', 'ordinances')
             services.setAttribute('class', 'bold');
+            schedules.setAttribute('class', 'bold');
+        closing.setAttribute('class', 'closing');
+            closures.setAttribute('class', 'bold');
         weather.setAttribute('class', 'weather');
     
 
