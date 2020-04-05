@@ -90,6 +90,8 @@ function getTempleFull() {
 
 function buildFull(temple) {
 
+    // let br = document.createElement('br');
+
     let card = document.createElement('article');
     let info = document.createElement('section');
     let address = document.createElement('section');
@@ -99,6 +101,8 @@ function buildFull(temple) {
     let announce = document.createElement('p');
     let groundbreaking = document.createElement('p');
     let dedicated = document.createElement('p');
+    let addressp = document.createElement('p');
+    let addressphn = document.createElement('p');
     let reded1 = document.createElement('p');
     let reded2 = document.createElement('p');
     let addressh3 = document.createElement('h3');
@@ -107,7 +111,18 @@ function buildFull(temple) {
     let addr3 = document.createElement('p');
     let country = document.createElement('p');
     let image = document.createElement('img');
-    // let br = document.createElement('br');
+    let phonenum = document.createElement('p');
+    let addresseml = document.createElement('p');
+    let email = document.createElement('p');
+    let services = document.createElement('p');
+    let service1 = document.createElement('p');
+    let service2 = document.createElement('p');
+    let service3 = document.createElement('p');
+    let service4 = document.createElement('p');
+
+
+
+
 
     h1.textContent = temple.Name + " Temple";
     announce.textContent =  temple.History[0].Milestone + temple.History[0].Date;
@@ -119,13 +134,23 @@ function buildFull(temple) {
     stradd2.textContent = temple.StreetLine2;
     addr3.textContent = temple.City + ", " + temple.State + " " +  temple.Zip;
     country.textContent =  temple.Country;
+    phonenum.textContent = temple.Telephone;
+    email.textContent = temple.Email;
     image.setAttribute('src', "images/" + temple.Photo);
     image.setAttribute('alt', temple.Name + " Photo");
-    infoh3.textContent = 'Fun Facts';
-    addressh3.textContent = 'Address';
+    infoh3.textContent = 'History';
+    addressh3.textContent = 'Information';
+    addressp.textContent = "Address:";
+    addressphn.textContent = "Phone number:"
+    addresseml.textContent = "Email: "
+    services.textContent = 'Services: '
+    service1.textContent = temple.Services[0];
+    service2.textContent = temple.Services[1];
+    service3.textContent = temple.Services[2];
+    service4.textContent = temple.Services[3];
 
 
-
+        // assigning html position
     card.appendChild(h1);
     card.appendChild(image);
     card.appendChild(info);
@@ -137,17 +162,36 @@ function buildFull(temple) {
         info.appendChild(reded2);
     card.appendChild(address);
         address.appendChild(addressh3);
+        address.appendChild(addressp);
         address.appendChild(stradd1);
         address.appendChild(stradd2);
         address.appendChild(addr3);
         address.appendChild(country);
+        address.appendChild(addressphn);
+        address.appendChild(phonenum);
+        address.appendChild(addresseml);
+        address.appendChild(email);
+        address.appendChild(services);
+        address.appendChild(service1);
+        address.appendChild(service2);
+        address.appendChild(service3);
+        address.appendChild(service4);
 
+
+        // Setting attributes for styling
     card.setAttribute('class', 'temple_card');
     card.setAttribute('id', temple.Photo + "_card");
         info.setAttribute("class", 'information');
         address.setAttribute('class', 'address');
+            addresseml.setAttribute('class', 'bold');
+            addressphn.setAttribute('class', 'bold');
+            addressp.setAttribute('class', 'bold');
+            services.setAttribute('class', 'bold');
         weather.setAttribute('class', 'weather');
+    
 
+    
+        // Adding all the cards to the webpage
     document.querySelector('#templefull').appendChild(card);
 }
 

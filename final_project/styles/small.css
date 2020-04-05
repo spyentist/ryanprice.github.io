@@ -88,6 +88,10 @@ textarea {
     text-align: center;
 }
 
+.bold {
+    font-weight: bold;
+}
+
 .call {
     background-color: var(--primary-color);
     opacity: .7;
