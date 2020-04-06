@@ -68,8 +68,8 @@ function getTempleFull() {
     let image = document.createElement('img');
 
     h1.textContent = temple.Name + " Temple";
-    p.textContent =  temple.History[0].Milestone + ": " + temple.History[0].Date;
-    p2.textContent = temple.History[2].Milestone + ": " + temple.History[2].Date;
+    p.textContent =  temple.History[0].Milestone + temple.History[0].Date;
+    p2.textContent = temple.History[2].Milestone  + temple.History[2].Date;
     // p3.textContent = '' + temples. + '"';
     image.setAttribute('src', "images/" + temple.Photo);
     image.setAttribute('alt', temple.Name + " Photo");

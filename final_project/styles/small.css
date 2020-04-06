@@ -58,6 +58,7 @@ label {
 
 main h2 {
     text-align:center;
+    margin:0 0 1em 0;
 }
 
 nav ul {
@@ -81,11 +82,22 @@ textarea {
     height: 4em;
 }
 
+ul {
+    list-style: none;
+}
+
+ul li {
+    padding: .25em .5em .25em 0 
+}
 
 /* Class selectors */
 
 .address {
     width:100%;
+    text-align: center;
+}
+
+.amenities h3 {
     text-align: center;
 }
 
@@ -155,6 +167,29 @@ textarea {
     display: none;
 }
 
+.pictures {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.offer {
+    text-align: center;
+    padding: 0 .25em 0 .25em;
+}
+
+.reserve_form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--secondary-color);
+}
+
+.reserve_form form input {
+    text-align: center;
+    width:90%;
+    border: 1pt solid var(--primary-color);
+}
+
 .responsive {
     display: flex;
     list-style: none;
@@ -163,6 +198,14 @@ textarea {
 
 .responsive li {
     display: block;
+}
+
+.services_links {
+    text-align:center;
+}
+
+.suite {
+    text-align: center;
 }
 
 #submit {

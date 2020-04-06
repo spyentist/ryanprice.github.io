@@ -15,18 +15,60 @@
         <nav>
             <ul class="navigation" id="navigation">
                 <li class="menu_icon"><a href="javascript:void(0);" onclick="adaptiveMenu()">&#9776;</a></li>
-                <li class="links"><a href="../" id="active">Home</a></li>
-                <li class="links"><a href="/final_project/">Temples</a></li>
-                <li class="links"><a href="/final_project/">Reservtions</a></li>
-                <li class="links"><a href="/final_project/">Services</a></li>
-                <li class="links"><a href="/final_project/">Contact Us</a></li>
+                <li class="links"><a href="/final_project/">Home</a></li>
+                <li class="links"><a href="/final_project/temples.html">Temples</a></li>
+                <li class="links"><a href="#" id="active">Reservtions</a></li>
+                <li class="links"><a href="/final_project/services.html">Services</a></li>
+                <li class="links"><a href="/final_project/contact.html">Contact Us</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="res_hero">
-            <h2>Reservations</h2>
-        </section>
+        <section class="hero"></section>
+        <section class="reserve_form">
+            <h3>Start your reservation here!</h3>
+            <form action="thankyou.html" method="GET">
+                <div>
+                    <label for="location">What location?</label>
+                    <input id="location" type="text" name="location">
+                </div>
+                <div>
+                    <label for="date">Check-in date</label>
+                    <input type="date" name="date" id="date">
+                </div>      
+                <div>
+                    <label for="room_num">How many rooms?</label>
+                    <input type="number" name="room_num" id="room_num">
+                </div>
+                <div>
+                    <label for="room_type">What type of rooms?</label>
+                    <input type="text" name="room_type" id="room_type">
+                </div>
+                <div>
+                    <label for="fullName">Your full name:</label>
+                    <input type="text" name="fullName" id="fullName" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" name="phone" id="phone">
+                </div>
+                <div>
+                    <label for="home">Home state or country:</label>
+                    <input type="text" name="home" id="home">
+                </div>
+                <div>
+                    <label for="accomodations">Accomodations or comments:</label>
+                    <textarea name="accomodations" id="accomodations" cols="30" rows="10"></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Submit" src="/thankyou.html" id="submit">
+                </div>
+            </form>
+        </section> 
     </main>
     <footer>
         &copy; <span id="year"></span> &starf; Temple Inn & Suites &starf; <span id="curdate"></span>
